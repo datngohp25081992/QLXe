@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A998713C-A50B-4A5F-BA9D-520E85F6DEFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Test.My.MyApplication</StartupObject>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Test.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Test.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaiTap\frmBai10.Designer.vb">
+      <DependentUpon>frmBai10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai11.Designer.vb">
+      <DependentUpon>frmBai11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai11.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai2.Designer.vb">
+      <DependentUpon>frmBai2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai3.Designer.vb">
+      <DependentUpon>frmBai3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai4.Designer.vb">
+      <DependentUpon>frmBai4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai5.Designer.vb">
+      <DependentUpon>frmBai5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai6.Designer.vb">
+      <DependentUpon>frmBai6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai7.Designer.vb">
+      <DependentUpon>frmBai7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai8.Designer.vb">
+      <DependentUpon>frmBai8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai9.Designer.vb">
+      <DependentUpon>frmBai9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clsCommonList.vb" />
+    <Compile Include="clsDataBaseAccess.vb" />
+    <Compile Include="clsValidate.vb" />
+    <Compile Include="QLXe\frmChinh.Designer.vb">
+      <DependentUpon>frmChinh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmChinh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLXe\frmNhanVien.Designer.vb">
+      <DependentUpon>frmNhanVien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmNhanVien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLXe\frmQLXe.Designer.vb">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmQLXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmTestGRV.Designer.vb">
+      <DependentUpon>frmTestGRV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmTestGRV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmTestKetNoi.Designer.vb">
+      <DependentUpon>frmTestKetNoi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmTestKetNoi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmTinhToan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmTinhToan.Designer.vb">
+      <DependentUpon>frmTinhToan.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaiTap\frmBai1.Designer.vb">
+      <DependentUpon>frmBai1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaiTap\frmBai1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QLSVDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmTraXe.Designer.vb">
+      <DependentUpon>frmTraXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmTraXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLXe\frmMuonXe.Designer.vb">
+      <DependentUpon>frmMuonXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmMuonXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaiTap\frmBai1.resx">
+      <DependentUpon>frmBai1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai10.resx">
+      <DependentUpon>frmBai10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai11.resx">
+      <DependentUpon>frmBai11.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai2.resx">
+      <DependentUpon>frmBai2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai3.resx">
+      <DependentUpon>frmBai3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai4.resx">
+      <DependentUpon>frmBai4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai5.resx">
+      <DependentUpon>frmBai5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai6.resx">
+      <DependentUpon>frmBai6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai7.resx">
+      <DependentUpon>frmBai7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai8.resx">
+      <DependentUpon>frmBai8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmBai9.resx">
+      <DependentUpon>frmBai9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="QLXe\frmChinh.resx">
+      <DependentUpon>frmChinh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLXe\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLXe\frmQLXe.resx">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmTestGRV.resx">
+      <DependentUpon>frmTestGRV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmTestKetNoi.resx">
+      <DependentUpon>frmTestKetNoi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaiTap\frmTinhToan.resx">
+      <DependentUpon>frmTinhToan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLXe\frmTraXe.resx">
+      <DependentUpon>frmTraXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLXe\frmMuonXe.resx">
+      <DependentUpon>frmMuonXe.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="QLSVDataSet.xsc">
+      <DependentUpon>QLSVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDataSet.xss">
+      <DependentUpon>QLSVDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+    <None Include="Resources\add_32x321.png" />
+    <None Include="Resources\add_16x16.png" />
+    <None Include="Resources\add_32x322.png" />
+    <Content Include="SqlConnect.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
