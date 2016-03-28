@@ -23,6 +23,8 @@ Partial Class frmQLXe
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.txtBienSo = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.cbTinhTrang = New System.Windows.Forms.ComboBox()
         Me.btCanCel = New System.Windows.Forms.Button()
         Me.btOk = New System.Windows.Forms.Button()
@@ -31,12 +33,10 @@ Partial Class frmQLXe
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtSoCho = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtTenXe = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtBienSo = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.txtModel = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtTenXe = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -63,12 +63,28 @@ Partial Class frmQLXe
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         '
+        'txtBienSo
+        '
+        Me.txtBienSo.Location = New System.Drawing.Point(86, 58)
+        Me.txtBienSo.Name = "txtBienSo"
+        Me.txtBienSo.Size = New System.Drawing.Size(204, 20)
+        Me.txtBienSo.TabIndex = 15
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(30, 61)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(47, 13)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "Biển Số:"
+        '
         'cbTinhTrang
         '
         Me.cbTinhTrang.DisplayMember = "TenTinhTrang"
         Me.cbTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTinhTrang.FormattingEnabled = True
-        Me.cbTinhTrang.Location = New System.Drawing.Point(83, 198)
+        Me.cbTinhTrang.Location = New System.Drawing.Point(86, 198)
         Me.cbTinhTrang.Name = "cbTinhTrang"
         Me.cbTinhTrang.Size = New System.Drawing.Size(173, 21)
         Me.cbTinhTrang.TabIndex = 13
@@ -76,6 +92,7 @@ Partial Class frmQLXe
         '
         'btCanCel
         '
+        Me.btCanCel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btCanCel.Location = New System.Drawing.Point(181, 244)
         Me.btCanCel.Name = "btCanCel"
         Me.btCanCel.Size = New System.Drawing.Size(75, 23)
@@ -94,7 +111,7 @@ Partial Class frmQLXe
         '
         'txtMauXe
         '
-        Me.txtMauXe.Location = New System.Drawing.Point(88, 128)
+        Me.txtMauXe.Location = New System.Drawing.Point(86, 128)
         Me.txtMauXe.Name = "txtMauXe"
         Me.txtMauXe.Size = New System.Drawing.Size(204, 20)
         Me.txtMauXe.TabIndex = 9
@@ -119,7 +136,7 @@ Partial Class frmQLXe
         '
         'txtSoCho
         '
-        Me.txtSoCho.Location = New System.Drawing.Point(83, 163)
+        Me.txtSoCho.Location = New System.Drawing.Point(86, 163)
         Me.txtSoCho.Name = "txtSoCho"
         Me.txtSoCho.Size = New System.Drawing.Size(173, 20)
         Me.txtSoCho.TabIndex = 5
@@ -133,41 +150,9 @@ Partial Class frmQLXe
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Số Chỗ:"
         '
-        'txtTenXe
-        '
-        Me.txtTenXe.Location = New System.Drawing.Point(88, 26)
-        Me.txtTenXe.Name = "txtTenXe"
-        Me.txtTenXe.Size = New System.Drawing.Size(204, 20)
-        Me.txtTenXe.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(32, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Tên Xe:"
-        '
-        'txtBienSo
-        '
-        Me.txtBienSo.Location = New System.Drawing.Point(86, 58)
-        Me.txtBienSo.Name = "txtBienSo"
-        Me.txtBienSo.Size = New System.Drawing.Size(204, 20)
-        Me.txtBienSo.TabIndex = 15
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(30, 61)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 13)
-        Me.Label6.TabIndex = 14
-        Me.Label6.Text = "Biển Số:"
-        '
         'txtModel
         '
-        Me.txtModel.Location = New System.Drawing.Point(88, 93)
+        Me.txtModel.Location = New System.Drawing.Point(86, 93)
         Me.txtModel.Name = "txtModel"
         Me.txtModel.Size = New System.Drawing.Size(204, 20)
         Me.txtModel.TabIndex = 3
@@ -180,6 +165,22 @@ Partial Class frmQLXe
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Model:"
+        '
+        'txtTenXe
+        '
+        Me.txtTenXe.Location = New System.Drawing.Point(86, 26)
+        Me.txtTenXe.Name = "txtTenXe"
+        Me.txtTenXe.Size = New System.Drawing.Size(204, 20)
+        Me.txtTenXe.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(32, 29)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Tên Xe:"
         '
         'frmQLXe
         '

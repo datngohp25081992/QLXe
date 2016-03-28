@@ -23,6 +23,7 @@ Partial Class frmNhanVien
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.btCancel = New System.Windows.Forms.Button()
         Me.btOk = New System.Windows.Forms.Button()
         Me.txtSoCMND = New System.Windows.Forms.TextBox()
@@ -34,7 +35,6 @@ Partial Class frmNhanVien
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtMaNhanVien = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,9 +59,18 @@ Partial Class frmNhanVien
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DateTimePicker1.Location = New System.Drawing.Point(455, 19)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(173, 20)
+        Me.DateTimePicker1.TabIndex = 13
+        '
         'btCancel
         '
-        Me.btCancel.Location = New System.Drawing.Point(217, 130)
+        Me.btCancel.Location = New System.Drawing.Point(193, 129)
         Me.btCancel.Name = "btCancel"
         Me.btCancel.Size = New System.Drawing.Size(75, 23)
         Me.btCancel.TabIndex = 12
@@ -70,7 +79,7 @@ Partial Class frmNhanVien
         '
         'btOk
         '
-        Me.btOk.Location = New System.Drawing.Point(80, 130)
+        Me.btOk.Location = New System.Drawing.Point(64, 129)
         Me.btOk.Name = "btOk"
         Me.btOk.Size = New System.Drawing.Size(75, 23)
         Me.btOk.TabIndex = 10
@@ -150,15 +159,6 @@ Partial Class frmNhanVien
         Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Mã Nhân Viên:"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(455, 19)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(173, 20)
-        Me.DateTimePicker1.TabIndex = 13
         '
         'frmNhanVien
         '

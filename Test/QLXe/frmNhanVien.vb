@@ -3,6 +3,7 @@ Public Class frmNhanVien
 
     Dim _dbSql As New DataBaseAccess
     Dim ThaoTac As clsCommonList.ThaoTac
+
     Private Sub load_grvNhanVien(ByVal record As String)
         Dim sqlQuery As String = String.Format("Select * From tbl_NhanVien WHERE MaNV='{0}'", record)
         Dim dTable As DataTable = _dbSql.GetDataTable(sqlQuery)
@@ -45,5 +46,9 @@ Public Class frmNhanVien
             Me.Close()
         End If
 
+    End Sub
+
+    Private Sub btCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btCancel.Click
+        Close()
     End Sub
 End Class

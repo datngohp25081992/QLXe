@@ -206,6 +206,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLXe\frmSuaKmDongHo.Designer.vb">
+      <DependentUpon>frmSuaKmDongHo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QLXe\frmSuaKmDongHo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QLXe\frmTraXe.Designer.vb">
       <DependentUpon>frmTraXe.vb</DependentUpon>
     </Compile>
@@ -277,6 +283,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLXe\frmSuaKmDongHo.resx">
+      <DependentUpon>frmSuaKmDongHo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QLXe\frmTraXe.resx">
       <DependentUpon>frmTraXe.vb</DependentUpon>

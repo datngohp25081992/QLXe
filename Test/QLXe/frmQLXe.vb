@@ -3,6 +3,7 @@ Public Class frmQLXe
 
     Dim _dbSql As New DataBaseAccess   
     Dim ThaoTac As clsCommonList.ThaoTac
+
     Private Sub load_grvXe(ByVal record As String)
         Dim sqlQuery As String = String.Format("Select TenXe,Model,MauXe,SoCho,TinhTrang,BienSo From tbl_Xe WHERE BienSo='{0}'", record)
         Dim dTable As DataTable = _dbSql.GetDataTable(sqlQuery)
@@ -12,8 +13,7 @@ Public Class frmQLXe
         txtMauXe.Text = row("MauXe").ToString()
         txtModel.Text = row("Model").ToString()
         txtSoCho.Text = row("SoCho").ToString()
-        cbTinhTrang.SelectedValue = row("TinhTrang").ToString()
-        'grvDanhSachXe.DataSource = dTable
+        cbTinhTrang.SelectedValue = row("TinhTrang").ToString()        
     End Sub
 
     Private Sub frmQLXe_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -48,5 +48,9 @@ Public Class frmQLXe
             Me.Close()
         End If
 
+    End Sub
+
+    Private Sub btCanCel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btCanCel.Click
+        Close()
     End Sub
 End Class
