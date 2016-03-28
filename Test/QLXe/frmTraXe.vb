@@ -26,13 +26,18 @@
             MsgBox("Số KM đồng hồ không hợp lệ")
         Else
             Dim sqlQuery As String = ""
-            sqlQuery = String.Format("update tbl_MuonTraXe SET ThoiGianTra='{0}',SoKmDongHo='{1}',TinhTrang={2},MoTa=N'{3}' WHERE MaMuon={4}", dtTraXeThuc.Value, txtSoKmDongHo.Text, cbTinhTrangTra.SelectedValue, txtMoTa.Text, Me.Owner.Text.Remove(0, clsCommonList.ThaoTac.Sua.ToString().Length))
-            _dbSql.ExecuteNoneQuery(sqlQuery)
-            sqlQuery = String.Format("Update tbl_Xe Set TinhTrang={0} Where BienSo='{1}'", cbTinhTrangTra.SelectedValue, txtBienSo.Text)
-            _dbSql.ExecuteNoneQuery(sqlQuery)
-            MsgBox("Ok")
-            DialogResult = DialogResult.OK
-            Me.Close()
+            Dim km As Integer = CInt(txtSoKmDongHo.Text) - CInt(_dbSql.GetScalar(String.Format("Select SoKmHienTai from tbl_Xe Where BienSo='{0}'", txtBienSo.Text)))
+            If km <= 0 Then
+                MsgBox("Số km đồng hồ hiện tại không phù hợp")
+            Else
+                sqlQuery = String.Format("update tbl_MuonTraXe SET ThoiGianTra='{0}',SoKmDongHo='{1}',SoKmDaDi='{5}',TinhTrang={2},MoTa=N'{3}' WHERE MaMuon={4}", dtTraXeThuc.Value, txtSoKmDongHo.Text, cbTinhTrangTra.SelectedValue, txtMoTa.Text, Me.Owner.Text.Remove(0, clsCommonList.ThaoTac.Sua.ToString().Length), km.ToString())
+                _dbSql.ExecuteNoneQuery(sqlQuery)
+                sqlQuery = String.Format("Update tbl_Xe Set TinhTrang={0},SoKmHienTai='{2}' Where BienSo='{1}'", cbTinhTrangTra.SelectedValue, txtBienSo.Text, txtSoKmDongHo.Text)
+                _dbSql.ExecuteNoneQuery(sqlQuery)
+                MsgBox("Ok")
+                DialogResult = DialogResult.OK
+                Me.Close()
+            End If
         End If
     End Sub
 

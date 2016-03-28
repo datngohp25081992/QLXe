@@ -8,6 +8,8 @@
     Enum TinhTrangXeTra
         BinhThuong = 0
         XeHong = 1
+        ChuaTra = 2
+        Huy = 3
     End Enum
     Enum ThaoTac
         Them = 0
@@ -33,6 +35,7 @@
         results.Rows.Add(0, "Bình thường")
         results.Rows.Add(1, "Đã hỏng")
         results.Rows.Add(2, "Chưa Trả")
+        results.Rows.Add(3, "Hủy")
         Return results
 
     End Function

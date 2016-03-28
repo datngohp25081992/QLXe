@@ -5,11 +5,11 @@ Public Class frmChinh
 
     Dim _dbSql As New DataBaseAccess
     Private Function DSMuonXe_Table() As DataTable
-        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV AND tbl_Xe.TenXe LIKE N'%{0}%'", txtTKMuonXe.Text)
+        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV AND tbl_MuonTraXe.TinhTrang <> {0}", clsCommonList.TinhTrangXeTra.Huy.GetHashCode())
         Return _dbSql.GetDataTable(sqlQuery)
     End Function
     Private Function DSTraXe_Table() As DataTable
-        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV AND tbl_Xe.TenXe LIKE N'%{0}%' and SoKmDongHo IS NULL", txtTKTraXe.Text)
+        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV and SoKmDongHo IS NULL")
         Return _dbSql.GetDataTable(sqlQuery)
     End Function
     Private Function DSXe_Table() As DataTable
@@ -157,14 +157,6 @@ Public Class frmChinh
         Load_DSMuonTraXe()
     End Sub
 
-    Private Sub txtTKMuonXe_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtTKMuonXe.TextChanged
-        Load_DSMuonXe()
-    End Sub
-
-    Private Sub txtTKTraXe_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtTKTraXe.TextChanged
-        Load_DSTraXe()
-    End Sub
-
     Private Sub btXoaMuonXe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btXoaMuonXe.Click
         Dim rc As String = GridView3.GetFocusedRowCellValue("MaMuon")
         If rc <> String.Empty Then
@@ -184,16 +176,26 @@ Public Class frmChinh
         End If
     End Sub
 
-    Private Sub btSuaKm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btSuaKm.Click
-        Dim frmSuaKm As New frmSuaKmDongHo
-        Dim record As String = GridView5.GetFocusedRowCellValue("MaMuon")
-        If (record <> String.Empty) Then
-            Me.Text = clsCommonList.ThaoTac.Sua.ToString() + GridView5.GetFocusedRowCellValue("MaMuon").ToString()
-            frmSuaKmDongHo.Owner = Me
-            If (frmSuaKmDongHo.ShowDialog() = DialogResult.OK) Then
-                Load_DSMuonTraXe()
+    'Private Sub btSuaKm_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btSuaKm.Click
+    '    Dim frmSuaKm As New frmSuaKmDongHo
+    '    Dim record As String = GridView5.GetFocusedRowCellValue("MaMuon")
+    '    If (record <> String.Empty) Then
+    '        Me.Text = clsCommonList.ThaoTac.Sua.ToString() + GridView5.GetFocusedRowCellValue("MaMuon").ToString()
+    '        frmSuaKmDongHo.Owner = Me
+    '        If (frmSuaKmDongHo.ShowDialog() = DialogResult.OK) Then
+    '            Load_DSMuonTraXe()
+    '        End If
+    '        Me.ResetText()
+    '    End If
+    'End Sub
+
+    Private Sub btHuy_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btHuy.Click
+        If MessageBox.Show("Are you sure", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) = DialogResult.OK Then
+            Dim record As String = GridView3.GetFocusedRowCellValue("MaMuon")
+            If (record <> String.Empty) Then
+                _dbSql.ExecuteNoneQuery(String.Format("Update tbl_MuonTraXe Set TinhTrang={0} where MaMuon={1}", clsCommonList.TinhTrangXeTra.Huy.GetHashCode(), record))
+                Load_DSMuonXe()
             End If
-            Me.ResetText()
         End If
     End Sub
 End Class

@@ -30,13 +30,13 @@
             MsgBox("Khoảng thời gian mượn không hợp lệ")
         ElseIf (dtDkMuonXe.Value.Date < Today) Then
             MsgBox("Ngày đăng ký mượn không hợp lệ")
-        ElseIf (_dbSql.GetScalar(String.Format("Select MaMuon from tbl_MuonTraXe Where ThoiGianMuon<='{1}' AND ThoiGianTra>='{1}' AND BienSo='{0}'", cbTenXe.SelectedValue, dtNgayMuon.Value)) <> Nothing) Then
+        ElseIf (_dbSql.GetScalar(String.Format("Select MaMuon from tbl_MuonTraXe Where TinhTrang <> {2} AND ThoiGianMuon<='{1}' AND ThoiGianTra>='{1}' AND BienSo='{0}'", cbTenXe.SelectedValue, dtNgayMuon.Value, clsCommonList.TinhTrangXeTra.Huy.GetHashCode())) <> Nothing) Then
             MsgBox("Xe không rảnh trong thời gian này")
         ElseIf _dbSql.GetScalar(String.Format("Select BienSo From tbl_Xe Where BienSo='{0}' And TinhTrang <> 0", cbTenXe.SelectedValue)) <> Nothing Then
             MsgBox("Xe này chưa sẵn sàng để sử dụng")
         Else
             Dim sqlQuery As String = ""
-            sqlQuery = String.Format("Insert tbl_MuonTraXe Values('{0}','{1}','{2}','{3}','{4}',N'{5}',N'{6}',{7},{8},{9})", cbNguoiMuon.SelectedValue, cbTenXe.SelectedValue, dtDkMuonXe.Value, dtNgayMuon.Value, dtNgayTra.Value, txtMucDich.Text, txtDiaDiem.Text, "NULL", "2", "NULL")
+            sqlQuery = String.Format("Insert tbl_MuonTraXe(MaNV,BienSo,NgayDkMuon,ThoiGianMuon,ThoiGianTra,MucDich,DiaDiemDen,SoKmDongHo,TinhTrang,MoTa) Values('{0}','{1}','{2}','{3}','{4}',N'{5}',N'{6}',{7},{8},{9})", cbNguoiMuon.SelectedValue, cbTenXe.SelectedValue, dtDkMuonXe.Value, dtNgayMuon.Value, dtNgayTra.Value, txtMucDich.Text, txtDiaDiem.Text, "NULL", clsCommonList.TinhTrangXeTra.ChuaTra.GetHashCode(), "NULL")
             _dbSql.ExecuteNoneQuery(sqlQuery)
             MsgBox("Ok")
             DialogResult = DialogResult.OK

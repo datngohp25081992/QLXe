@@ -74,8 +74,6 @@ Partial Class frmChinh
         Me.ThoiGianMuonM = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ThoiGianTraM = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
-        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
-        Me.txtTKMuonXe = New DevExpress.XtraEditors.TextEdit()
         Me.btXoaMuonXe = New DevExpress.XtraEditors.SimpleButton()
         Me.btThemMuonXe = New DevExpress.XtraEditors.SimpleButton()
         Me.tpTraXe = New DevExpress.XtraTab.XtraTabPage()
@@ -89,8 +87,6 @@ Partial Class frmChinh
         Me.ThoiGianMuonT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ThoiGianTraT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelControl4 = New DevExpress.XtraEditors.PanelControl()
-        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
-        Me.txtTKTraXe = New DevExpress.XtraEditors.TextEdit()
         Me.btThemTraXe = New DevExpress.XtraEditors.SimpleButton()
         Me.tpThongKe = New DevExpress.XtraTab.XtraTabPage()
         Me.gcMuonTraXe = New DevExpress.XtraGrid.GridControl()
@@ -104,18 +100,18 @@ Partial Class frmChinh
         Me.ThoiGianTra = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.MucDich = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DiaDiemDen = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.SoKmDongHo = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.SoKmDaDi = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.TinhTrangTK = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
         Me.MoTa = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelControl5 = New DevExpress.XtraEditors.PanelControl()
-        Me.btSuaKm = New System.Windows.Forms.Button()
         Me.btLoc = New System.Windows.Forms.Button()
         Me.dtDenNgay = New System.Windows.Forms.DateTimePicker()
         Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
         Me.dtTuNgay = New System.Windows.Forms.DateTimePicker()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
+        Me.btHuy = New DevExpress.XtraEditors.SimpleButton()
         Me.Panel1.SuspendLayout()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
@@ -136,13 +132,11 @@ Partial Class frmChinh
         CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl3.SuspendLayout()
-        CType(Me.txtTKMuonXe.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpTraXe.SuspendLayout()
         CType(Me.gcTraXe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl4.SuspendLayout()
-        CType(Me.txtTKTraXe.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tpThongKe.SuspendLayout()
         CType(Me.gcMuonTraXe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -198,6 +192,7 @@ Partial Class frmChinh
         Me.GridView1.GridControl = Me.gcQLXe
         Me.GridView1.Name = "GridView1"
         Me.GridView1.OptionsBehavior.Editable = False
+        Me.GridView1.OptionsView.ShowGroupPanel = False
         '
         'TenXe
         '
@@ -416,6 +411,7 @@ Partial Class frmChinh
         Me.GridView2.GridControl = Me.gcQLNV
         Me.GridView2.Name = "GridView2"
         Me.GridView2.OptionsBehavior.Editable = False
+        Me.GridView2.OptionsView.ShowGroupPanel = False
         '
         'MaNV
         '
@@ -530,6 +526,8 @@ Partial Class frmChinh
         Me.GridView3.GridControl = Me.gcMuonXe
         Me.GridView3.Name = "GridView3"
         Me.GridView3.OptionsBehavior.Editable = False
+        Me.GridView3.OptionsView.ShowAutoFilterRow = True
+        Me.GridView3.OptionsView.ShowGroupPanel = False
         '
         'MaMuonM
         '
@@ -538,6 +536,8 @@ Partial Class frmChinh
         Me.MaMuonM.Caption = "STT"
         Me.MaMuonM.FieldName = "MaMuon"
         Me.MaMuonM.Name = "MaMuonM"
+        Me.MaMuonM.Visible = True
+        Me.MaMuonM.VisibleIndex = 0
         '
         'TenNVM
         '
@@ -546,6 +546,8 @@ Partial Class frmChinh
         Me.TenNVM.Caption = "Người Mượn"
         Me.TenNVM.FieldName = "TenNV"
         Me.TenNVM.Name = "TenNVM"
+        Me.TenNVM.Visible = True
+        Me.TenNVM.VisibleIndex = 1
         '
         'SoCMNDM
         '
@@ -554,6 +556,8 @@ Partial Class frmChinh
         Me.SoCMNDM.Caption = "Số CMND"
         Me.SoCMNDM.FieldName = "SoCMND"
         Me.SoCMNDM.Name = "SoCMNDM"
+        Me.SoCMNDM.Visible = True
+        Me.SoCMNDM.VisibleIndex = 2
         '
         'TenXeM
         '
@@ -562,6 +566,8 @@ Partial Class frmChinh
         Me.TenXeM.Caption = "Tên Xe"
         Me.TenXeM.FieldName = "TenXe"
         Me.TenXeM.Name = "TenXeM"
+        Me.TenXeM.Visible = True
+        Me.TenXeM.VisibleIndex = 3
         '
         'BienSoM
         '
@@ -570,6 +576,8 @@ Partial Class frmChinh
         Me.BienSoM.Caption = "Biển Số"
         Me.BienSoM.FieldName = "BienSo"
         Me.BienSoM.Name = "BienSoM"
+        Me.BienSoM.Visible = True
+        Me.BienSoM.VisibleIndex = 4
         '
         'ThoiGianMuonM
         '
@@ -580,6 +588,8 @@ Partial Class frmChinh
         Me.ThoiGianMuonM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.ThoiGianMuonM.FieldName = "ThoiGianMuon"
         Me.ThoiGianMuonM.Name = "ThoiGianMuonM"
+        Me.ThoiGianMuonM.Visible = True
+        Me.ThoiGianMuonM.VisibleIndex = 5
         '
         'ThoiGianTraM
         '
@@ -590,11 +600,12 @@ Partial Class frmChinh
         Me.ThoiGianTraM.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.ThoiGianTraM.FieldName = "ThoiGianTra"
         Me.ThoiGianTraM.Name = "ThoiGianTraM"
+        Me.ThoiGianTraM.Visible = True
+        Me.ThoiGianTraM.VisibleIndex = 6
         '
         'PanelControl3
         '
-        Me.PanelControl3.Controls.Add(Me.LabelControl1)
-        Me.PanelControl3.Controls.Add(Me.txtTKMuonXe)
+        Me.PanelControl3.Controls.Add(Me.btHuy)
         Me.PanelControl3.Controls.Add(Me.btXoaMuonXe)
         Me.PanelControl3.Controls.Add(Me.btThemMuonXe)
         Me.PanelControl3.Dock = System.Windows.Forms.DockStyle.Top
@@ -602,23 +613,6 @@ Partial Class frmChinh
         Me.PanelControl3.Name = "PanelControl3"
         Me.PanelControl3.Size = New System.Drawing.Size(646, 30)
         Me.PanelControl3.TabIndex = 0
-        '
-        'LabelControl1
-        '
-        Me.LabelControl1.Location = New System.Drawing.Point(443, 9)
-        Me.LabelControl1.Name = "LabelControl1"
-        Me.LabelControl1.Size = New System.Drawing.Size(83, 13)
-        Me.LabelControl1.TabIndex = 2
-        Me.LabelControl1.Text = "Tìm Theo Tên Xe:"
-        '
-        'txtTKMuonXe
-        '
-        Me.txtTKMuonXe.EditValue = ""
-        Me.txtTKMuonXe.Location = New System.Drawing.Point(532, 5)
-        Me.txtTKMuonXe.MenuManager = Me.RibbonControl1
-        Me.txtTKMuonXe.Name = "txtTKMuonXe"
-        Me.txtTKMuonXe.Size = New System.Drawing.Size(100, 20)
-        Me.txtTKMuonXe.TabIndex = 1
         '
         'btXoaMuonXe
         '
@@ -662,6 +656,8 @@ Partial Class frmChinh
         Me.GridView4.GridControl = Me.gcTraXe
         Me.GridView4.Name = "GridView4"
         Me.GridView4.OptionsBehavior.Editable = False
+        Me.GridView4.OptionsView.ShowAutoFilterRow = True
+        Me.GridView4.OptionsView.ShowGroupPanel = False
         '
         'MaMuonT
         '
@@ -739,30 +735,12 @@ Partial Class frmChinh
         '
         'PanelControl4
         '
-        Me.PanelControl4.Controls.Add(Me.LabelControl2)
-        Me.PanelControl4.Controls.Add(Me.txtTKTraXe)
         Me.PanelControl4.Controls.Add(Me.btThemTraXe)
         Me.PanelControl4.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl4.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl4.Name = "PanelControl4"
         Me.PanelControl4.Size = New System.Drawing.Size(646, 30)
         Me.PanelControl4.TabIndex = 0
-        '
-        'LabelControl2
-        '
-        Me.LabelControl2.Location = New System.Drawing.Point(449, 9)
-        Me.LabelControl2.Name = "LabelControl2"
-        Me.LabelControl2.Size = New System.Drawing.Size(83, 13)
-        Me.LabelControl2.TabIndex = 4
-        Me.LabelControl2.Text = "Tìm Theo Tên Xe:"
-        '
-        'txtTKTraXe
-        '
-        Me.txtTKTraXe.Location = New System.Drawing.Point(538, 6)
-        Me.txtTKTraXe.MenuManager = Me.RibbonControl1
-        Me.txtTKTraXe.Name = "txtTKTraXe"
-        Me.txtTKTraXe.Size = New System.Drawing.Size(100, 20)
-        Me.txtTKTraXe.TabIndex = 3
         '
         'btThemTraXe
         '
@@ -795,10 +773,12 @@ Partial Class frmChinh
         '
         'GridView5
         '
-        Me.GridView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuon, Me.TenNVTK, Me.SoCMNDTK, Me.BienSoTK, Me.NgayDkMuon, Me.ThoiGianMuon, Me.ThoiGianTra, Me.MucDich, Me.DiaDiemDen, Me.SoKmDongHo, Me.TinhTrangTK, Me.MoTa})
+        Me.GridView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuon, Me.TenNVTK, Me.SoCMNDTK, Me.BienSoTK, Me.NgayDkMuon, Me.ThoiGianMuon, Me.ThoiGianTra, Me.MucDich, Me.DiaDiemDen, Me.SoKmDaDi, Me.TinhTrangTK, Me.MoTa})
         Me.GridView5.GridControl = Me.gcMuonTraXe
         Me.GridView5.Name = "GridView5"
         Me.GridView5.OptionsBehavior.Editable = False
+        Me.GridView5.OptionsView.ShowAutoFilterRow = True
+        Me.GridView5.OptionsView.ShowGroupPanel = False
         '
         'MaMuon
         '
@@ -894,15 +874,15 @@ Partial Class frmChinh
         Me.DiaDiemDen.Visible = True
         Me.DiaDiemDen.VisibleIndex = 8
         '
-        'SoKmDongHo
+        'SoKmDaDi
         '
-        Me.SoKmDongHo.AppearanceCell.Options.UseTextOptions = True
-        Me.SoKmDongHo.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.SoKmDongHo.Caption = "Số Km Đồng Hồ"
-        Me.SoKmDongHo.FieldName = "SoKmDongHo"
-        Me.SoKmDongHo.Name = "SoKmDongHo"
-        Me.SoKmDongHo.Visible = True
-        Me.SoKmDongHo.VisibleIndex = 9
+        Me.SoKmDaDi.AppearanceCell.Options.UseTextOptions = True
+        Me.SoKmDaDi.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.SoKmDaDi.Caption = "Số Km Đã Đi"
+        Me.SoKmDaDi.FieldName = "SoKmDaDi"
+        Me.SoKmDaDi.Name = "SoKmDaDi"
+        Me.SoKmDaDi.Visible = True
+        Me.SoKmDaDi.VisibleIndex = 9
         '
         'TinhTrangTK
         '
@@ -935,7 +915,6 @@ Partial Class frmChinh
         '
         'PanelControl5
         '
-        Me.PanelControl5.Controls.Add(Me.btSuaKm)
         Me.PanelControl5.Controls.Add(Me.btLoc)
         Me.PanelControl5.Controls.Add(Me.dtDenNgay)
         Me.PanelControl5.Controls.Add(Me.LabelControl4)
@@ -946,16 +925,6 @@ Partial Class frmChinh
         Me.PanelControl5.Name = "PanelControl5"
         Me.PanelControl5.Size = New System.Drawing.Size(646, 30)
         Me.PanelControl5.TabIndex = 1
-        '
-        'btSuaKm
-        '
-        Me.btSuaKm.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.btSuaKm.Location = New System.Drawing.Point(388, 3)
-        Me.btSuaKm.Name = "btSuaKm"
-        Me.btSuaKm.Size = New System.Drawing.Size(75, 23)
-        Me.btSuaKm.TabIndex = 5
-        Me.btSuaKm.Text = "Sửa Km"
-        Me.btSuaKm.UseVisualStyleBackColor = True
         '
         'btLoc
         '
@@ -1009,6 +978,14 @@ Partial Class frmChinh
         Me.BarButtonItem2.LargeGlyph = Global.Test.My.Resources.Resources.add_32x32
         Me.BarButtonItem2.Name = "BarButtonItem2"
         '
+        'btHuy
+        '
+        Me.btHuy.Location = New System.Drawing.Point(174, 4)
+        Me.btHuy.Name = "btHuy"
+        Me.btHuy.Size = New System.Drawing.Size(75, 23)
+        Me.btHuy.TabIndex = 1
+        Me.btHuy.Text = "Hủy"
+        '
         'frmChinh
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1040,15 +1017,11 @@ Partial Class frmChinh
         CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PanelControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl3.ResumeLayout(False)
-        Me.PanelControl3.PerformLayout()
-        CType(Me.txtTKMuonXe.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpTraXe.ResumeLayout(False)
         CType(Me.gcTraXe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PanelControl4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl4.ResumeLayout(False)
-        Me.PanelControl4.PerformLayout()
-        CType(Me.txtTKTraXe.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tpThongKe.ResumeLayout(False)
         CType(Me.gcMuonTraXe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1137,19 +1110,15 @@ Partial Class frmChinh
     Friend WithEvents ThoiGianTra As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents MucDich As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents DiaDiemDen As DevExpress.XtraGrid.Columns.GridColumn
-    Friend WithEvents SoKmDongHo As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents SoKmDaDi As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents TinhTrangTK As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents MoTa As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
-    Friend WithEvents txtTKMuonXe As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents txtTKTraXe As DevExpress.XtraEditors.TextEdit
-    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents RepositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
     Friend WithEvents btLoc As System.Windows.Forms.Button
     Friend WithEvents dtDenNgay As System.Windows.Forms.DateTimePicker
     Friend WithEvents LabelControl4 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents dtTuNgay As System.Windows.Forms.DateTimePicker
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
-    Friend WithEvents btSuaKm As System.Windows.Forms.Button
+    Friend WithEvents btHuy As DevExpress.XtraEditors.SimpleButton
 End Class
