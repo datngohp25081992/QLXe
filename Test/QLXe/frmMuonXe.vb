@@ -14,7 +14,7 @@
         Me.cbNguoiMuon.DataSource = dTable
     End Sub
 
-    Private Sub frmXeDangMuon_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub frmXeDangMuon_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load       
         Load_cbTenXe()
         load_cbNhanVien()
     End Sub
@@ -36,7 +36,7 @@
             MsgBox("Xe này chưa sẵn sàng để sử dụng")
         Else
             Dim sqlQuery As String = ""
-            sqlQuery = String.Format("Insert tbl_MuonTraXe(MaNV,BienSo,NgayDkMuon,ThoiGianMuon,ThoiGianTra,MucDich,DiaDiemDen,SoKmDongHo,TinhTrang,MoTa) Values('{0}','{1}','{2}','{3}','{4}',N'{5}',N'{6}',{7},{8},{9})", cbNguoiMuon.SelectedValue, cbTenXe.SelectedValue, dtDkMuonXe.Value, dtNgayMuon.Value, dtNgayTra.Value, txtMucDich.Text, txtDiaDiem.Text, "NULL", clsCommonList.TinhTrangXeTra.ChuaTra.GetHashCode(), "NULL")
+            sqlQuery = String.Format("Insert tbl_MuonTraXe(MaNV,BienSo,NgayDkMuon,ThoiGianMuon,ThoiGianTra,MucDich,DiaDiemDen,SoKmDongHo,TinhTrang,MoTa,BienSoCu) Values('{0}','{1}','{2}','{3}','{4}',N'{5}',N'{6}',{7},{8},{9},'{10}')", cbNguoiMuon.SelectedValue, cbTenXe.SelectedValue, dtDkMuonXe.Value, dtNgayMuon.Value, dtNgayTra.Value, txtMucDich.Text, txtDiaDiem.Text, "NULL", clsCommonList.TinhTrangXeTra.ChuaTra.GetHashCode(), "NULL", cbTenXe.SelectedValue)
             _dbSql.ExecuteNoneQuery(sqlQuery)
             MsgBox("Ok")
             DialogResult = DialogResult.OK
@@ -53,5 +53,4 @@
             txtSoCMND.Text = _dbSql.GetScalar(String.Format("Select SoCMND from tbl_NhanVien Where MaNV='{0}'", cbNguoiMuon.SelectedValue)).ToString()
         End If
     End Sub
-
 End Class

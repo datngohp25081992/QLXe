@@ -5,11 +5,11 @@ Public Class frmChinh
 
     Dim _dbSql As New DataBaseAccess
     Private Function DSMuonXe_Table() As DataTable
-        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV AND tbl_MuonTraXe.TinhTrang <> {0}", clsCommonList.TinhTrangXeTra.Huy.GetHashCode())
+        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra,BienSoCu From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV AND tbl_MuonTraXe.TinhTrang <> {0}", clsCommonList.TinhTrangXeTra.Huy.GetHashCode())
         Return _dbSql.GetDataTable(sqlQuery)
     End Function
     Private Function DSTraXe_Table() As DataTable
-        Dim sqlQuery As String = String.Format("select MaMuon,TenNV,TenXe,SoCMND,tbl_Xe.BienSo,ThoiGianMuon,ThoiGianTra From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV and SoKmDongHo IS NULL")
+        Dim sqlQuery As String = String.Format("select * From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV and SoKmDongHo IS NULL and tbl_MuonTraXe.TinhTrang <>{0}", clsCommonList.TinhTrangXeTra.Huy.GetHashCode())
         Return _dbSql.GetDataTable(sqlQuery)
     End Function
     Private Function DSXe_Table() As DataTable
@@ -128,7 +128,7 @@ Public Class frmChinh
 
     Private Sub frmChinh_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         RepositoryItemLookUpEdit1.DataSource = (New clsCommonList).TinhTrangXe_Table()
-        RepositoryItemLookUpEdit2.DataSource = (New clsCommonList).TinhTrangTraXe_Table()
+        RepositoryItemLookUpEdit2.DataSource = (New clsCommonList).TinhTrangTraXe_Table()       
     End Sub
 
     Private Sub btTKTraXe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -157,15 +157,15 @@ Public Class frmChinh
         Load_DSMuonTraXe()
     End Sub
 
-    Private Sub btXoaMuonXe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btXoaMuonXe.Click
-        Dim rc As String = GridView3.GetFocusedRowCellValue("MaMuon")
-        If rc <> String.Empty Then
-            If MessageBox.Show("Bạn có chắc chắn muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                _dbSql.ExecuteNoneQuery(String.Format("Delete From tbl_MuonTraXe Where MaMuon='{0}'", GridView3.GetFocusedRowCellValue("MaMuon")))
-                Load_DSMuonXe()
-            End If
-        End If
-    End Sub
+    'Private Sub btXoaMuonXe_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btXoaMuonXe.Click
+    '    Dim rc As String = GridView3.GetFocusedRowCellValue("MaMuon")
+    '    If rc <> String.Empty Then
+    '        If MessageBox.Show("Bạn có chắc chắn muốn xóa không", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+    '            _dbSql.ExecuteNoneQuery(String.Format("Delete From tbl_MuonTraXe Where MaMuon='{0}'", GridView3.GetFocusedRowCellValue("MaMuon")))
+    '            Load_DSMuonXe()
+    '        End If
+    '    End If
+    'End Sub
 
     Private Sub btLoc_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btLoc.Click
         If dtTuNgay.Value > dtDenNgay.Value Then
@@ -197,5 +197,15 @@ Public Class frmChinh
                 Load_DSMuonXe()
             End If
         End If
+    End Sub
+
+    Private Sub btTimKiem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btTimKiem.Click
+        Me.Text = dtLocTuNgay.Value.ToString() + ";" + dtLocDenNgay.Value.ToString()
+        Dim frmLinhTinh As New frmLichTrinh
+        frmLinhTinh.Owner = Me
+        frmLinhTinh.Show()
+        'Dim sqlQuery As String = String.Format("select * From tbl_MuonTraXe,tbl_Xe,tbl_NhanVien WHERE tbl_MuonTraXe.BienSo=tbl_Xe.BienSo AND tbl_MuonTraXe.MaNV=tbl_NhanVien.MaNV and tbl_MuonTraXe.TinhTrang <>{0} and ((ThoiGianMuon >= '{1}' and ThoiGianMuon-1 <= '{2}') or (ThoiGianTra >= '{1}' and ThoiGianTra-1 <= '{2}'))", clsCommonList.TinhTrangXeTra.Huy.GetHashCode(), dtLocTuNgay.Value.Date, dtLocDenNgay.Value.Date)
+        'gcMuonXe.DataSource = _dbSql.GetDataTable(sqlQuery)
+        'gcMuonXe.RefreshDataSource()
     End Sub
 End Class

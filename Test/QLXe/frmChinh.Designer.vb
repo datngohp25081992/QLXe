@@ -45,8 +45,6 @@ Partial Class frmChinh
         Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.PanelControl1 = New DevExpress.XtraEditors.PanelControl()
         Me.btXoaXe = New DevExpress.XtraEditors.SimpleButton()
         Me.btSuaXe = New DevExpress.XtraEditors.SimpleButton()
@@ -74,16 +72,23 @@ Partial Class frmChinh
         Me.ThoiGianMuonM = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ThoiGianTraM = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelControl3 = New DevExpress.XtraEditors.PanelControl()
-        Me.btXoaMuonXe = New DevExpress.XtraEditors.SimpleButton()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.dtLocDenNgay = New System.Windows.Forms.DateTimePicker()
+        Me.btTimKiem = New DevExpress.XtraEditors.SimpleButton()
+        Me.dtLocTuNgay = New System.Windows.Forms.DateTimePicker()
+        Me.btHuy = New DevExpress.XtraEditors.SimpleButton()
         Me.btThemMuonXe = New DevExpress.XtraEditors.SimpleButton()
         Me.tpTraXe = New DevExpress.XtraTab.XtraTabPage()
         Me.gcTraXe = New DevExpress.XtraGrid.GridControl()
         Me.GridView4 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.MaMuonT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.TenNVT = New DevExpress.XtraGrid.Columns.GridColumn()
-        Me.SoCMNDT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.TenXeT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.BienSoT = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.TenNVT = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.SoCMNDT = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.DiaDiemDenT = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.MucDichT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ThoiGianMuonT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.ThoiGianTraT = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.PanelControl4 = New DevExpress.XtraEditors.PanelControl()
@@ -100,6 +105,7 @@ Partial Class frmChinh
         Me.ThoiGianTra = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.MucDich = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.DiaDiemDen = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.SoKmDongHoTk = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.SoKmDaDi = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.TinhTrangTK = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
@@ -110,8 +116,13 @@ Partial Class frmChinh
         Me.LabelControl4 = New DevExpress.XtraEditors.LabelControl()
         Me.dtTuNgay = New System.Windows.Forms.DateTimePicker()
         Me.LabelControl3 = New DevExpress.XtraEditors.LabelControl()
+        Me.BackstageViewControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
+        Me.BackstageViewClientControl1 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
+        Me.BackstageViewTabItem1 = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
+        Me.BackstageViewControl2 = New DevExpress.XtraBars.Ribbon.BackstageViewControl()
+        Me.BackstageViewClientControl2 = New DevExpress.XtraBars.Ribbon.BackstageViewClientControl()
+        Me.BackstageViewTabItem2 = New DevExpress.XtraBars.Ribbon.BackstageViewTabItem()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
-        Me.btHuy = New DevExpress.XtraEditors.SimpleButton()
         Me.Panel1.SuspendLayout()
         CType(Me.XtraTabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.XtraTabControl1.SuspendLayout()
@@ -143,16 +154,20 @@ Partial Class frmChinh
         CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PanelControl5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelControl5.SuspendLayout()
+        Me.BackstageViewControl1.SuspendLayout()
+        Me.BackstageViewControl2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.XtraTabControl1)
         Me.Panel1.Controls.Add(Me.RibbonControl1)
+        Me.Panel1.Controls.Add(Me.BackstageViewControl1)
+        Me.Panel1.Controls.Add(Me.BackstageViewControl2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(652, 464)
+        Me.Panel1.Size = New System.Drawing.Size(745, 477)
         Me.Panel1.TabIndex = 3
         '
         'XtraTabControl1
@@ -161,7 +176,7 @@ Partial Class frmChinh
         Me.XtraTabControl1.Location = New System.Drawing.Point(0, 142)
         Me.XtraTabControl1.Name = "XtraTabControl1"
         Me.XtraTabControl1.SelectedTabPage = Me.tpQLXe
-        Me.XtraTabControl1.Size = New System.Drawing.Size(652, 322)
+        Me.XtraTabControl1.Size = New System.Drawing.Size(745, 335)
         Me.XtraTabControl1.TabIndex = 1
         Me.XtraTabControl1.TabPages.AddRange(New DevExpress.XtraTab.XtraTabPage() {Me.tpQLXe, Me.tpQLNV, Me.tpMuonXe, Me.tpTraXe, Me.tpThongKe})
         '
@@ -170,7 +185,7 @@ Partial Class frmChinh
         Me.tpQLXe.Controls.Add(Me.gcQLXe)
         Me.tpQLXe.Controls.Add(Me.PanelControl1)
         Me.tpQLXe.Name = "tpQLXe"
-        Me.tpQLXe.Size = New System.Drawing.Size(646, 294)
+        Me.tpQLXe.Size = New System.Drawing.Size(994, 322)
         Me.tpQLXe.Text = "Quản lý xe"
         '
         'gcQLXe
@@ -182,7 +197,7 @@ Partial Class frmChinh
         Me.gcQLXe.MenuManager = Me.RibbonControl1
         Me.gcQLXe.Name = "gcQLXe"
         Me.gcQLXe.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit1})
-        Me.gcQLXe.Size = New System.Drawing.Size(646, 264)
+        Me.gcQLXe.Size = New System.Drawing.Size(994, 292)
         Me.gcQLXe.TabIndex = 1
         Me.gcQLXe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -270,14 +285,13 @@ Partial Class frmChinh
         Me.RibbonControl1.Location = New System.Drawing.Point(0, 0)
         Me.RibbonControl1.MaxItemId = 2
         Me.RibbonControl1.Name = "RibbonControl1"
-        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage2, Me.RibbonPage1})
-        Me.RibbonControl1.Size = New System.Drawing.Size(652, 142)
+        Me.RibbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage2})
+        Me.RibbonControl1.Size = New System.Drawing.Size(745, 142)
         '
         'btQLXe
         '
         Me.btQLXe.Caption = "Xe"
         Me.btQLXe.CategoryGuid = New System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537")
-        Me.btQLXe.Glyph = Global.Test.My.Resources.Resources.add_16x16
         Me.btQLXe.Id = 2
         Me.btQLXe.LargeGlyph = CType(resources.GetObject("btQLXe.LargeGlyph"), System.Drawing.Image)
         Me.btQLXe.Name = "btQLXe"
@@ -337,17 +351,6 @@ Partial Class frmChinh
         Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
         Me.RibbonPageGroup3.Text = "Nghiệp vụ"
         '
-        'RibbonPage1
-        '
-        Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1})
-        Me.RibbonPage1.Name = "RibbonPage1"
-        Me.RibbonPage1.Text = "Hệ thống"
-        '
-        'RibbonPageGroup1
-        '
-        Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
-        Me.RibbonPageGroup1.Text = "RibbonPageGroup1"
-        '
         'PanelControl1
         '
         Me.PanelControl1.Controls.Add(Me.btXoaXe)
@@ -356,7 +359,7 @@ Partial Class frmChinh
         Me.PanelControl1.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl1.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl1.Name = "PanelControl1"
-        Me.PanelControl1.Size = New System.Drawing.Size(646, 30)
+        Me.PanelControl1.Size = New System.Drawing.Size(994, 30)
         Me.PanelControl1.TabIndex = 0
         '
         'btXoaXe
@@ -388,7 +391,7 @@ Partial Class frmChinh
         Me.tpQLNV.Controls.Add(Me.gcQLNV)
         Me.tpQLNV.Controls.Add(Me.PanelControl2)
         Me.tpQLNV.Name = "tpQLNV"
-        Me.tpQLNV.Size = New System.Drawing.Size(646, 294)
+        Me.tpQLNV.Size = New System.Drawing.Size(994, 322)
         Me.tpQLNV.Text = "Quản lý nhân viên"
         '
         'gcQLNV
@@ -401,7 +404,7 @@ Partial Class frmChinh
         Me.gcQLNV.MainView = Me.GridView2
         Me.gcQLNV.MenuManager = Me.RibbonControl1
         Me.gcQLNV.Name = "gcQLNV"
-        Me.gcQLNV.Size = New System.Drawing.Size(646, 264)
+        Me.gcQLNV.Size = New System.Drawing.Size(994, 292)
         Me.gcQLNV.TabIndex = 1
         Me.gcQLNV.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
         '
@@ -473,7 +476,7 @@ Partial Class frmChinh
         Me.PanelControl2.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl2.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl2.Name = "PanelControl2"
-        Me.PanelControl2.Size = New System.Drawing.Size(646, 30)
+        Me.PanelControl2.Size = New System.Drawing.Size(994, 30)
         Me.PanelControl2.TabIndex = 0
         '
         'btXoaNhanVien
@@ -505,7 +508,7 @@ Partial Class frmChinh
         Me.tpMuonXe.Controls.Add(Me.gcMuonXe)
         Me.tpMuonXe.Controls.Add(Me.PanelControl3)
         Me.tpMuonXe.Name = "tpMuonXe"
-        Me.tpMuonXe.Size = New System.Drawing.Size(646, 294)
+        Me.tpMuonXe.Size = New System.Drawing.Size(739, 307)
         Me.tpMuonXe.Text = "Đăng ký mượn xe"
         '
         'gcMuonXe
@@ -516,7 +519,7 @@ Partial Class frmChinh
         Me.gcMuonXe.MainView = Me.GridView3
         Me.gcMuonXe.MenuManager = Me.RibbonControl1
         Me.gcMuonXe.Name = "gcMuonXe"
-        Me.gcMuonXe.Size = New System.Drawing.Size(646, 264)
+        Me.gcMuonXe.Size = New System.Drawing.Size(739, 277)
         Me.gcMuonXe.TabIndex = 1
         Me.gcMuonXe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
         '
@@ -538,6 +541,7 @@ Partial Class frmChinh
         Me.MaMuonM.Name = "MaMuonM"
         Me.MaMuonM.Visible = True
         Me.MaMuonM.VisibleIndex = 0
+        Me.MaMuonM.Width = 20
         '
         'TenNVM
         '
@@ -548,6 +552,7 @@ Partial Class frmChinh
         Me.TenNVM.Name = "TenNVM"
         Me.TenNVM.Visible = True
         Me.TenNVM.VisibleIndex = 1
+        Me.TenNVM.Width = 99
         '
         'SoCMNDM
         '
@@ -558,6 +563,7 @@ Partial Class frmChinh
         Me.SoCMNDM.Name = "SoCMNDM"
         Me.SoCMNDM.Visible = True
         Me.SoCMNDM.VisibleIndex = 2
+        Me.SoCMNDM.Width = 99
         '
         'TenXeM
         '
@@ -568,16 +574,18 @@ Partial Class frmChinh
         Me.TenXeM.Name = "TenXeM"
         Me.TenXeM.Visible = True
         Me.TenXeM.VisibleIndex = 3
+        Me.TenXeM.Width = 99
         '
         'BienSoM
         '
         Me.BienSoM.AppearanceCell.Options.UseTextOptions = True
         Me.BienSoM.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
         Me.BienSoM.Caption = "Biển Số"
-        Me.BienSoM.FieldName = "BienSo"
+        Me.BienSoM.FieldName = "BienSoCu"
         Me.BienSoM.Name = "BienSoM"
         Me.BienSoM.Visible = True
         Me.BienSoM.VisibleIndex = 4
+        Me.BienSoM.Width = 99
         '
         'ThoiGianMuonM
         '
@@ -590,6 +598,7 @@ Partial Class frmChinh
         Me.ThoiGianMuonM.Name = "ThoiGianMuonM"
         Me.ThoiGianMuonM.Visible = True
         Me.ThoiGianMuonM.VisibleIndex = 5
+        Me.ThoiGianMuonM.Width = 99
         '
         'ThoiGianTraM
         '
@@ -602,25 +611,74 @@ Partial Class frmChinh
         Me.ThoiGianTraM.Name = "ThoiGianTraM"
         Me.ThoiGianTraM.Visible = True
         Me.ThoiGianTraM.VisibleIndex = 6
+        Me.ThoiGianTraM.Width = 113
         '
         'PanelControl3
         '
+        Me.PanelControl3.Controls.Add(Me.Label2)
+        Me.PanelControl3.Controls.Add(Me.Label1)
+        Me.PanelControl3.Controls.Add(Me.dtLocDenNgay)
+        Me.PanelControl3.Controls.Add(Me.btTimKiem)
+        Me.PanelControl3.Controls.Add(Me.dtLocTuNgay)
         Me.PanelControl3.Controls.Add(Me.btHuy)
-        Me.PanelControl3.Controls.Add(Me.btXoaMuonXe)
         Me.PanelControl3.Controls.Add(Me.btThemMuonXe)
         Me.PanelControl3.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl3.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl3.Name = "PanelControl3"
-        Me.PanelControl3.Size = New System.Drawing.Size(646, 30)
+        Me.PanelControl3.Size = New System.Drawing.Size(739, 30)
         Me.PanelControl3.TabIndex = 0
         '
-        'btXoaMuonXe
+        'Label2
         '
-        Me.btXoaMuonXe.Location = New System.Drawing.Point(93, 4)
-        Me.btXoaMuonXe.Name = "btXoaMuonXe"
-        Me.btXoaMuonXe.Size = New System.Drawing.Size(75, 23)
-        Me.btXoaMuonXe.TabIndex = 0
-        Me.btXoaMuonXe.Text = "Xóa"
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(356, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(30, 13)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Đến:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(218, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(23, 13)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Từ:"
+        '
+        'dtLocDenNgay
+        '
+        Me.dtLocDenNgay.CustomFormat = "dd/MM/yyyy"
+        Me.dtLocDenNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtLocDenNgay.Location = New System.Drawing.Point(392, 5)
+        Me.dtLocDenNgay.Name = "dtLocDenNgay"
+        Me.dtLocDenNgay.Size = New System.Drawing.Size(103, 20)
+        Me.dtLocDenNgay.TabIndex = 4
+        '
+        'btTimKiem
+        '
+        Me.btTimKiem.Location = New System.Drawing.Point(501, 4)
+        Me.btTimKiem.Name = "btTimKiem"
+        Me.btTimKiem.Size = New System.Drawing.Size(64, 23)
+        Me.btTimKiem.TabIndex = 3
+        Me.btTimKiem.Text = "Tìm Kiếm"
+        '
+        'dtLocTuNgay
+        '
+        Me.dtLocTuNgay.CustomFormat = "dd/MM/yyyy"
+        Me.dtLocTuNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtLocTuNgay.Location = New System.Drawing.Point(247, 5)
+        Me.dtLocTuNgay.Name = "dtLocTuNgay"
+        Me.dtLocTuNgay.Size = New System.Drawing.Size(103, 20)
+        Me.dtLocTuNgay.TabIndex = 2
+        '
+        'btHuy
+        '
+        Me.btHuy.Location = New System.Drawing.Point(93, 4)
+        Me.btHuy.Name = "btHuy"
+        Me.btHuy.Size = New System.Drawing.Size(75, 23)
+        Me.btHuy.TabIndex = 1
+        Me.btHuy.Text = "Hủy"
         '
         'btThemMuonXe
         '
@@ -635,7 +693,7 @@ Partial Class frmChinh
         Me.tpTraXe.Controls.Add(Me.gcTraXe)
         Me.tpTraXe.Controls.Add(Me.PanelControl4)
         Me.tpTraXe.Name = "tpTraXe"
-        Me.tpTraXe.Size = New System.Drawing.Size(646, 294)
+        Me.tpTraXe.Size = New System.Drawing.Size(739, 307)
         Me.tpTraXe.Text = "Quản lý Trả xe"
         '
         'gcTraXe
@@ -646,13 +704,13 @@ Partial Class frmChinh
         Me.gcTraXe.MainView = Me.GridView4
         Me.gcTraXe.MenuManager = Me.RibbonControl1
         Me.gcTraXe.Name = "gcTraXe"
-        Me.gcTraXe.Size = New System.Drawing.Size(646, 264)
+        Me.gcTraXe.Size = New System.Drawing.Size(739, 277)
         Me.gcTraXe.TabIndex = 1
         Me.gcTraXe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
         '
         'GridView4
         '
-        Me.GridView4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuonT, Me.TenNVT, Me.SoCMNDT, Me.TenXeT, Me.BienSoT, Me.ThoiGianMuonT, Me.ThoiGianTraT})
+        Me.GridView4.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuonT, Me.TenXeT, Me.BienSoT, Me.TenNVT, Me.SoCMNDT, Me.DiaDiemDenT, Me.MucDichT, Me.ThoiGianMuonT, Me.ThoiGianTraT})
         Me.GridView4.GridControl = Me.gcTraXe
         Me.GridView4.Name = "GridView4"
         Me.GridView4.OptionsBehavior.Editable = False
@@ -668,26 +726,7 @@ Partial Class frmChinh
         Me.MaMuonT.Name = "MaMuonT"
         Me.MaMuonT.Visible = True
         Me.MaMuonT.VisibleIndex = 0
-        '
-        'TenNVT
-        '
-        Me.TenNVT.AppearanceCell.Options.UseTextOptions = True
-        Me.TenNVT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.TenNVT.Caption = "Người Mượn"
-        Me.TenNVT.FieldName = "TenNV"
-        Me.TenNVT.Name = "TenNVT"
-        Me.TenNVT.Visible = True
-        Me.TenNVT.VisibleIndex = 1
-        '
-        'SoCMNDT
-        '
-        Me.SoCMNDT.AppearanceCell.Options.UseTextOptions = True
-        Me.SoCMNDT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
-        Me.SoCMNDT.Caption = "Số CMND"
-        Me.SoCMNDT.FieldName = "SoCMND"
-        Me.SoCMNDT.Name = "SoCMNDT"
-        Me.SoCMNDT.Visible = True
-        Me.SoCMNDT.VisibleIndex = 2
+        Me.MaMuonT.Width = 20
         '
         'TenXeT
         '
@@ -697,7 +736,8 @@ Partial Class frmChinh
         Me.TenXeT.FieldName = "TenXe"
         Me.TenXeT.Name = "TenXeT"
         Me.TenXeT.Visible = True
-        Me.TenXeT.VisibleIndex = 3
+        Me.TenXeT.VisibleIndex = 1
+        Me.TenXeT.Width = 79
         '
         'BienSoT
         '
@@ -707,7 +747,48 @@ Partial Class frmChinh
         Me.BienSoT.FieldName = "BienSo"
         Me.BienSoT.Name = "BienSoT"
         Me.BienSoT.Visible = True
-        Me.BienSoT.VisibleIndex = 4
+        Me.BienSoT.VisibleIndex = 2
+        Me.BienSoT.Width = 79
+        '
+        'TenNVT
+        '
+        Me.TenNVT.AppearanceCell.Options.UseTextOptions = True
+        Me.TenNVT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.TenNVT.Caption = "Người Mượn"
+        Me.TenNVT.FieldName = "TenNV"
+        Me.TenNVT.Name = "TenNVT"
+        Me.TenNVT.Visible = True
+        Me.TenNVT.VisibleIndex = 3
+        Me.TenNVT.Width = 79
+        '
+        'SoCMNDT
+        '
+        Me.SoCMNDT.AppearanceCell.Options.UseTextOptions = True
+        Me.SoCMNDT.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.SoCMNDT.Caption = "Số CMND"
+        Me.SoCMNDT.FieldName = "SoCMND"
+        Me.SoCMNDT.Name = "SoCMNDT"
+        Me.SoCMNDT.Visible = True
+        Me.SoCMNDT.VisibleIndex = 4
+        Me.SoCMNDT.Width = 79
+        '
+        'DiaDiemDenT
+        '
+        Me.DiaDiemDenT.Caption = "Địa Điểm Đến"
+        Me.DiaDiemDenT.FieldName = "DiaDiemDen"
+        Me.DiaDiemDenT.Name = "DiaDiemDenT"
+        Me.DiaDiemDenT.Visible = True
+        Me.DiaDiemDenT.VisibleIndex = 5
+        Me.DiaDiemDenT.Width = 60
+        '
+        'MucDichT
+        '
+        Me.MucDichT.Caption = "Mục Đích"
+        Me.MucDichT.FieldName = "MucDich"
+        Me.MucDichT.Name = "MucDichT"
+        Me.MucDichT.Visible = True
+        Me.MucDichT.VisibleIndex = 6
+        Me.MucDichT.Width = 60
         '
         'ThoiGianMuonT
         '
@@ -719,7 +800,8 @@ Partial Class frmChinh
         Me.ThoiGianMuonT.FieldName = "ThoiGianMuon"
         Me.ThoiGianMuonT.Name = "ThoiGianMuonT"
         Me.ThoiGianMuonT.Visible = True
-        Me.ThoiGianMuonT.VisibleIndex = 5
+        Me.ThoiGianMuonT.VisibleIndex = 7
+        Me.ThoiGianMuonT.Width = 79
         '
         'ThoiGianTraT
         '
@@ -731,7 +813,8 @@ Partial Class frmChinh
         Me.ThoiGianTraT.FieldName = "ThoiGianTra"
         Me.ThoiGianTraT.Name = "ThoiGianTraT"
         Me.ThoiGianTraT.Visible = True
-        Me.ThoiGianTraT.VisibleIndex = 6
+        Me.ThoiGianTraT.VisibleIndex = 8
+        Me.ThoiGianTraT.Width = 93
         '
         'PanelControl4
         '
@@ -739,7 +822,7 @@ Partial Class frmChinh
         Me.PanelControl4.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl4.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl4.Name = "PanelControl4"
-        Me.PanelControl4.Size = New System.Drawing.Size(646, 30)
+        Me.PanelControl4.Size = New System.Drawing.Size(739, 30)
         Me.PanelControl4.TabIndex = 0
         '
         'btThemTraXe
@@ -755,7 +838,7 @@ Partial Class frmChinh
         Me.tpThongKe.Controls.Add(Me.gcMuonTraXe)
         Me.tpThongKe.Controls.Add(Me.PanelControl5)
         Me.tpThongKe.Name = "tpThongKe"
-        Me.tpThongKe.Size = New System.Drawing.Size(646, 294)
+        Me.tpThongKe.Size = New System.Drawing.Size(739, 307)
         Me.tpThongKe.Text = "Thống Kê Mượn Trả Xe"
         '
         'gcMuonTraXe
@@ -767,16 +850,21 @@ Partial Class frmChinh
         Me.gcMuonTraXe.MenuManager = Me.RibbonControl1
         Me.gcMuonTraXe.Name = "gcMuonTraXe"
         Me.gcMuonTraXe.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemLookUpEdit2})
-        Me.gcMuonTraXe.Size = New System.Drawing.Size(646, 264)
+        Me.gcMuonTraXe.Size = New System.Drawing.Size(739, 277)
         Me.gcMuonTraXe.TabIndex = 2
         Me.gcMuonTraXe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView5})
         '
         'GridView5
         '
-        Me.GridView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuon, Me.TenNVTK, Me.SoCMNDTK, Me.BienSoTK, Me.NgayDkMuon, Me.ThoiGianMuon, Me.ThoiGianTra, Me.MucDich, Me.DiaDiemDen, Me.SoKmDaDi, Me.TinhTrangTK, Me.MoTa})
+        Me.GridView5.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.MaMuon, Me.TenNVTK, Me.SoCMNDTK, Me.BienSoTK, Me.NgayDkMuon, Me.ThoiGianMuon, Me.ThoiGianTra, Me.MucDich, Me.DiaDiemDen, Me.SoKmDongHoTk, Me.SoKmDaDi, Me.TinhTrangTK, Me.MoTa})
+        Me.GridView5.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus
         Me.GridView5.GridControl = Me.gcMuonTraXe
         Me.GridView5.Name = "GridView5"
+        Me.GridView5.OptionsBehavior.AutoExpandAllGroups = True
         Me.GridView5.OptionsBehavior.Editable = False
+        Me.GridView5.OptionsCustomization.AllowRowSizing = True
+        Me.GridView5.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.[True]
+        Me.GridView5.OptionsView.RowAutoHeight = True
         Me.GridView5.OptionsView.ShowAutoFilterRow = True
         Me.GridView5.OptionsView.ShowGroupPanel = False
         '
@@ -784,116 +872,163 @@ Partial Class frmChinh
         '
         Me.MaMuon.AppearanceCell.Options.UseTextOptions = True
         Me.MaMuon.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.MaMuon.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.MaMuon.Caption = "STT"
         Me.MaMuon.FieldName = "MaMuon"
         Me.MaMuon.Name = "MaMuon"
+        Me.MaMuon.OptionsColumn.FixedWidth = True
         Me.MaMuon.Visible = True
         Me.MaMuon.VisibleIndex = 0
+        Me.MaMuon.Width = 20
         '
         'TenNVTK
         '
         Me.TenNVTK.AppearanceCell.Options.UseTextOptions = True
         Me.TenNVTK.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.TenNVTK.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.TenNVTK.Caption = "Tên Nhân Viên"
         Me.TenNVTK.FieldName = "TenNV"
         Me.TenNVTK.Name = "TenNVTK"
+        Me.TenNVTK.OptionsColumn.FixedWidth = True
         Me.TenNVTK.Visible = True
         Me.TenNVTK.VisibleIndex = 1
+        Me.TenNVTK.Width = 53
         '
         'SoCMNDTK
         '
         Me.SoCMNDTK.AppearanceCell.Options.UseTextOptions = True
         Me.SoCMNDTK.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.SoCMNDTK.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.SoCMNDTK.Caption = "Số CMND"
         Me.SoCMNDTK.FieldName = "SoCMND"
         Me.SoCMNDTK.Name = "SoCMNDTK"
+        Me.SoCMNDTK.OptionsColumn.FixedWidth = True
         Me.SoCMNDTK.Visible = True
         Me.SoCMNDTK.VisibleIndex = 2
+        Me.SoCMNDTK.Width = 30
         '
         'BienSoTK
         '
         Me.BienSoTK.AppearanceCell.Options.UseTextOptions = True
         Me.BienSoTK.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.BienSoTK.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.BienSoTK.Caption = "Biển Số"
-        Me.BienSoTK.FieldName = "BienSo"
+        Me.BienSoTK.FieldName = "BienSoCu"
         Me.BienSoTK.Name = "BienSoTK"
+        Me.BienSoTK.OptionsColumn.FixedWidth = True
         Me.BienSoTK.Visible = True
         Me.BienSoTK.VisibleIndex = 3
+        Me.BienSoTK.Width = 30
         '
         'NgayDkMuon
         '
         Me.NgayDkMuon.AppearanceCell.Options.UseTextOptions = True
         Me.NgayDkMuon.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.NgayDkMuon.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.NgayDkMuon.Caption = "Ngày ĐK Mượn"
         Me.NgayDkMuon.FieldName = "NgayDkMuon"
         Me.NgayDkMuon.Name = "NgayDkMuon"
+        Me.NgayDkMuon.OptionsColumn.FixedWidth = True
         Me.NgayDkMuon.Visible = True
         Me.NgayDkMuon.VisibleIndex = 4
+        Me.NgayDkMuon.Width = 30
         '
         'ThoiGianMuon
         '
         Me.ThoiGianMuon.AppearanceCell.Options.UseTextOptions = True
         Me.ThoiGianMuon.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ThoiGianMuon.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.ThoiGianMuon.Caption = "Thời Gian Mượn"
         Me.ThoiGianMuon.DisplayFormat.FormatString = "dd/MM/yyyy H:mm:ss"
         Me.ThoiGianMuon.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.ThoiGianMuon.FieldName = "ThoiGianMuon"
         Me.ThoiGianMuon.Name = "ThoiGianMuon"
+        Me.ThoiGianMuon.OptionsColumn.FixedWidth = True
         Me.ThoiGianMuon.Visible = True
         Me.ThoiGianMuon.VisibleIndex = 5
+        Me.ThoiGianMuon.Width = 53
         '
         'ThoiGianTra
         '
         Me.ThoiGianTra.AppearanceCell.Options.UseTextOptions = True
         Me.ThoiGianTra.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.ThoiGianTra.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.ThoiGianTra.Caption = "Thời Gian Trả"
         Me.ThoiGianTra.DisplayFormat.FormatString = "dd/MM/yyyy H:mm:ss"
         Me.ThoiGianTra.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Custom
         Me.ThoiGianTra.FieldName = "ThoiGianTra"
         Me.ThoiGianTra.Name = "ThoiGianTra"
+        Me.ThoiGianTra.OptionsColumn.FixedWidth = True
         Me.ThoiGianTra.Visible = True
         Me.ThoiGianTra.VisibleIndex = 6
+        Me.ThoiGianTra.Width = 53
         '
         'MucDich
         '
         Me.MucDich.AppearanceCell.Options.UseTextOptions = True
         Me.MucDich.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.MucDich.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.MucDich.Caption = "Mục Đích"
         Me.MucDich.FieldName = "MucDich"
         Me.MucDich.Name = "MucDich"
+        Me.MucDich.OptionsColumn.FixedWidth = True
+        Me.MucDich.OptionsColumn.ReadOnly = True
         Me.MucDich.Visible = True
         Me.MucDich.VisibleIndex = 7
+        Me.MucDich.Width = 53
         '
         'DiaDiemDen
         '
         Me.DiaDiemDen.AppearanceCell.Options.UseTextOptions = True
         Me.DiaDiemDen.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.DiaDiemDen.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.DiaDiemDen.Caption = "Địa Điểm Đến"
         Me.DiaDiemDen.FieldName = "DiaDiemDen"
         Me.DiaDiemDen.Name = "DiaDiemDen"
+        Me.DiaDiemDen.OptionsColumn.FixedWidth = True
         Me.DiaDiemDen.Visible = True
         Me.DiaDiemDen.VisibleIndex = 8
+        Me.DiaDiemDen.Width = 53
+        '
+        'SoKmDongHoTk
+        '
+        Me.SoKmDongHoTk.AppearanceCell.Options.UseTextOptions = True
+        Me.SoKmDongHoTk.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.SoKmDongHoTk.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
+        Me.SoKmDongHoTk.Caption = "Số Km Đồng Hồ"
+        Me.SoKmDongHoTk.FieldName = "SoKmDongHo"
+        Me.SoKmDongHoTk.Name = "SoKmDongHoTk"
+        Me.SoKmDongHoTk.OptionsColumn.FixedWidth = True
+        Me.SoKmDongHoTk.Visible = True
+        Me.SoKmDongHoTk.VisibleIndex = 9
+        Me.SoKmDongHoTk.Width = 30
         '
         'SoKmDaDi
         '
         Me.SoKmDaDi.AppearanceCell.Options.UseTextOptions = True
         Me.SoKmDaDi.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.SoKmDaDi.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.SoKmDaDi.Caption = "Số Km Đã Đi"
         Me.SoKmDaDi.FieldName = "SoKmDaDi"
         Me.SoKmDaDi.Name = "SoKmDaDi"
+        Me.SoKmDaDi.OptionsColumn.FixedWidth = True
         Me.SoKmDaDi.Visible = True
-        Me.SoKmDaDi.VisibleIndex = 9
+        Me.SoKmDaDi.VisibleIndex = 10
+        Me.SoKmDaDi.Width = 30
         '
         'TinhTrangTK
         '
         Me.TinhTrangTK.AppearanceCell.Options.UseTextOptions = True
         Me.TinhTrangTK.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.TinhTrangTK.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.TinhTrangTK.Caption = "Tình Trạng"
         Me.TinhTrangTK.ColumnEdit = Me.RepositoryItemLookUpEdit2
         Me.TinhTrangTK.FieldName = "TinhTrang"
         Me.TinhTrangTK.Name = "TinhTrangTK"
+        Me.TinhTrangTK.OptionsColumn.FixedWidth = True
         Me.TinhTrangTK.Visible = True
-        Me.TinhTrangTK.VisibleIndex = 10
+        Me.TinhTrangTK.VisibleIndex = 11
+        Me.TinhTrangTK.Width = 30
         '
         'RepositoryItemLookUpEdit2
         '
@@ -907,11 +1042,14 @@ Partial Class frmChinh
         '
         Me.MoTa.AppearanceCell.Options.UseTextOptions = True
         Me.MoTa.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near
+        Me.MoTa.AppearanceCell.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap
         Me.MoTa.Caption = "Mô Tả"
         Me.MoTa.FieldName = "MoTa"
         Me.MoTa.Name = "MoTa"
+        Me.MoTa.OptionsColumn.FixedWidth = True
         Me.MoTa.Visible = True
-        Me.MoTa.VisibleIndex = 11
+        Me.MoTa.VisibleIndex = 12
+        Me.MoTa.Width = 78
         '
         'PanelControl5
         '
@@ -923,7 +1061,7 @@ Partial Class frmChinh
         Me.PanelControl5.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelControl5.Location = New System.Drawing.Point(0, 0)
         Me.PanelControl5.Name = "PanelControl5"
-        Me.PanelControl5.Size = New System.Drawing.Size(646, 30)
+        Me.PanelControl5.Size = New System.Drawing.Size(739, 30)
         Me.PanelControl5.TabIndex = 1
         '
         'btLoc
@@ -969,28 +1107,68 @@ Partial Class frmChinh
         Me.LabelControl3.TabIndex = 0
         Me.LabelControl3.Text = "Từ Ngày:"
         '
+        'BackstageViewControl1
+        '
+        Me.BackstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow
+        Me.BackstageViewControl1.Controls.Add(Me.BackstageViewClientControl1)
+        Me.BackstageViewControl1.Items.Add(Me.BackstageViewTabItem1)
+        Me.BackstageViewControl1.Location = New System.Drawing.Point(71, 213)
+        Me.BackstageViewControl1.Name = "BackstageViewControl1"
+        Me.BackstageViewControl1.SelectedTab = Nothing
+        Me.BackstageViewControl1.Size = New System.Drawing.Size(480, 150)
+        Me.BackstageViewControl1.TabIndex = 3
+        '
+        'BackstageViewClientControl1
+        '
+        Me.BackstageViewClientControl1.Location = New System.Drawing.Point(188, 0)
+        Me.BackstageViewClientControl1.Name = "BackstageViewClientControl1"
+        Me.BackstageViewClientControl1.Size = New System.Drawing.Size(292, 150)
+        Me.BackstageViewClientControl1.TabIndex = 0
+        '
+        'BackstageViewTabItem1
+        '
+        Me.BackstageViewTabItem1.Caption = "BackstageViewTabItem1"
+        Me.BackstageViewTabItem1.ContentControl = Me.BackstageViewClientControl1
+        Me.BackstageViewTabItem1.Name = "BackstageViewTabItem1"
+        Me.BackstageViewTabItem1.Selected = False
+        '
+        'BackstageViewControl2
+        '
+        Me.BackstageViewControl2.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow
+        Me.BackstageViewControl2.Controls.Add(Me.BackstageViewClientControl2)
+        Me.BackstageViewControl2.Items.Add(Me.BackstageViewTabItem2)
+        Me.BackstageViewControl2.Location = New System.Drawing.Point(71, 213)
+        Me.BackstageViewControl2.Name = "BackstageViewControl2"
+        Me.BackstageViewControl2.SelectedTab = Nothing
+        Me.BackstageViewControl2.Size = New System.Drawing.Size(480, 150)
+        Me.BackstageViewControl2.TabIndex = 4
+        '
+        'BackstageViewClientControl2
+        '
+        Me.BackstageViewClientControl2.Location = New System.Drawing.Point(188, 0)
+        Me.BackstageViewClientControl2.Name = "BackstageViewClientControl2"
+        Me.BackstageViewClientControl2.Size = New System.Drawing.Size(292, 150)
+        Me.BackstageViewClientControl2.TabIndex = 0
+        '
+        'BackstageViewTabItem2
+        '
+        Me.BackstageViewTabItem2.Caption = "BackstageViewTabItem2"
+        Me.BackstageViewTabItem2.ContentControl = Me.BackstageViewClientControl2
+        Me.BackstageViewTabItem2.Name = "BackstageViewTabItem2"
+        Me.BackstageViewTabItem2.Selected = False
+        '
         'BarButtonItem2
         '
         Me.BarButtonItem2.Caption = "Xe"
         Me.BarButtonItem2.CategoryGuid = New System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537")
-        Me.BarButtonItem2.Glyph = Global.Test.My.Resources.Resources.add_16x16
         Me.BarButtonItem2.Id = 2
-        Me.BarButtonItem2.LargeGlyph = Global.Test.My.Resources.Resources.add_32x32
         Me.BarButtonItem2.Name = "BarButtonItem2"
-        '
-        'btHuy
-        '
-        Me.btHuy.Location = New System.Drawing.Point(174, 4)
-        Me.btHuy.Name = "btHuy"
-        Me.btHuy.Size = New System.Drawing.Size(75, 23)
-        Me.btHuy.TabIndex = 1
-        Me.btHuy.Text = "Hủy"
         '
         'frmChinh
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(652, 464)
+        Me.ClientSize = New System.Drawing.Size(745, 477)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frmChinh"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1017,6 +1195,7 @@ Partial Class frmChinh
         CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PanelControl3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl3.ResumeLayout(False)
+        Me.PanelControl3.PerformLayout()
         Me.tpTraXe.ResumeLayout(False)
         CType(Me.gcTraXe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1029,14 +1208,14 @@ Partial Class frmChinh
         CType(Me.PanelControl5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelControl5.ResumeLayout(False)
         Me.PanelControl5.PerformLayout()
+        Me.BackstageViewControl1.ResumeLayout(False)
+        Me.BackstageViewControl2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents RibbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
-    Friend WithEvents RibbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
-    Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RibbonPage2 As DevExpress.XtraBars.Ribbon.RibbonPage
     Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents btQLXe As DevExpress.XtraBars.BarButtonItem
@@ -1069,7 +1248,6 @@ Partial Class frmChinh
     Friend WithEvents gcMuonXe As DevExpress.XtraGrid.GridControl
     Friend WithEvents GridView3 As DevExpress.XtraGrid.Views.Grid.GridView
     Friend WithEvents PanelControl3 As DevExpress.XtraEditors.PanelControl
-    Friend WithEvents btXoaMuonXe As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents btThemMuonXe As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents tpTraXe As DevExpress.XtraTab.XtraTabPage
     Friend WithEvents gcTraXe As DevExpress.XtraGrid.GridControl
@@ -1121,4 +1299,18 @@ Partial Class frmChinh
     Friend WithEvents dtTuNgay As System.Windows.Forms.DateTimePicker
     Friend WithEvents LabelControl3 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents btHuy As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents DiaDiemDenT As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents MucDichT As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents SoKmDongHoTk As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents btTimKiem As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents dtLocTuNgay As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents dtLocDenNgay As System.Windows.Forms.DateTimePicker
+    Friend WithEvents BackstageViewControl2 As DevExpress.XtraBars.Ribbon.BackstageViewControl
+    Friend WithEvents BackstageViewClientControl2 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
+    Friend WithEvents BackstageViewTabItem2 As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
+    Friend WithEvents BackstageViewControl1 As DevExpress.XtraBars.Ribbon.BackstageViewControl
+    Friend WithEvents BackstageViewClientControl1 As DevExpress.XtraBars.Ribbon.BackstageViewClientControl
+    Friend WithEvents BackstageViewTabItem1 As DevExpress.XtraBars.Ribbon.BackstageViewTabItem
 End Class

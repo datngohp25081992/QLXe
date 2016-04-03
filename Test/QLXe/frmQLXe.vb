@@ -23,7 +23,6 @@ Public Class frmQLXe
             If (Me.Owner.Text.StartsWith(clsCommonList.ThaoTac.Sua.ToString())) Then
                 ThaoTac = clsCommonList.ThaoTac.Sua
                 load_grvXe(Me.Owner.Text.Remove(0, clsCommonList.ThaoTac.Sua.ToString().Length))
-                txtBienSo.Enabled = False
             End If
         End If
     End Sub
@@ -38,7 +37,7 @@ Public Class frmQLXe
         Else
             Dim sqlQuery As String = ""
             If (ThaoTac = clsCommonList.ThaoTac.Sua) Then
-                sqlQuery = String.Format("Update tbl_Xe Set MauXe=N'{1}',Model=N'{2}',SoCho={3},TenXe=N'{4}',TinhTrang={5} Where BienSo ='{0}'", txtBienSo.Text, txtMauXe.Text, txtModel.Text, txtSoCho.Text, txtTenXe.Text, cbTinhTrang.SelectedValue)
+                sqlQuery = String.Format("Update tbl_Xe Set MauXe=N'{1}',Model=N'{2}',SoCho={3},TenXe=N'{4}',TinhTrang={5},BienSo='{6}' Where BienSo ='{0}'", Me.Owner.Text.Remove(0, clsCommonList.ThaoTac.Sua.ToString().Length), txtMauXe.Text, txtModel.Text, txtSoCho.Text, txtTenXe.Text, cbTinhTrang.SelectedValue, txtBienSo.Text)
             Else
                 sqlQuery = String.Format("Insert tbl_Xe Values(N'{0}',N'{1}',N'{2}',{3},{4},'{5}')", txtTenXe.Text, txtModel.Text, txtMauXe.Text, txtSoCho.Text, cbTinhTrang.SelectedValue, txtBienSo.Text)
             End If
