@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnSaveAndClose.Caption" xml:space="preserve">
+    <value>&amp;Save &amp;&amp; Close</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSaveAndClose.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v14.1" name="DevExpress.Utils.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="btnSaveAndClose.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAANU2F2ZSAmJiBDbG9zZQUIAAAAHERldkV4cHJlc3Mu
+        VXRpbHMuVG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFsaWduCklt
+        YWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVyQWxsb3dI
+        dG1sVGV4dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuAwAAABNT
+        eXN0ZW0uRHJhd2luZy5JY29uCQAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQkAAAAmRGV2RXhwcmVzcy5V
+        dGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfP////8////AgAAAAoKAfL////1
+        ////AAAAAP////8OAAAABgAAADwBAAAABg8AAAAkU2F2ZSB0aGlzIGl0ZW0gYW5kIGNsb3NlIHRoZSB3
+        aW5kb3cuCw==
+</value>
+  </data>
+  <data name="btnDelete.Caption" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="btnDelete.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Ay/z8/z/2ZzKg43wl4IAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnDelete.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAPRGVsZXRlIChDdHJsK0QpBQgAAAAcRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwSXRlbQoAAAANQWxsb3dIdG1sVGV4dARJY29uBUltYWdlCkltYWdlQWxpZ24K
+        SW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3RhbmNlCkxlZnRJbmRlbnQITWF4V2lkdGgST3duZXJBbGxv
+        d0h0bWxUZXh0BFRleHQEBAQEAAAAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4DAAAA
+        E1N5c3RlbS5EcmF3aW5nLkljb24JAAAAFFN5c3RlbS5EcmF3aW5nLkltYWdlCQAAACZEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBJbWFnZUFsaWdubWVudAIAAAAICAgIAQIAAAAB8/////z///8CAAAACgoB8v//
+        //X///8AAAAA/////w4AAAAGAAAAPAEAAAAGDwAAABFEZWxldGUgdGhpcyBpdGVtLgs=
+</value>
+  </data>
+  <data name="pgrActions.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="barEditShowTimeAs.Caption" xml:space="preserve">
+    <value>Show As:</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="repItemAppointmentStatus.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repItemAppointmentStatus.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="barEditShowTimeAs.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAHU2hvdyBBcwUIAAAAHERldkV4cHJlc3MuVXRpbHMu
+        VG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFsaWduCkltYWdlSW5k
+        ZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVyQWxsb3dIdG1sVGV4
+        dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuAwAAABNTeXN0ZW0u
+        RHJhd2luZy5JY29uCQAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQkAAAAmRGV2RXhwcmVzcy5VdGlscy5U
+        b29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfP////8////AgAAAAoKAfL////1////AAAA
+        AP////8OAAAABgAAADwBAAAABg8AAAA+Q2hhbmdlIGhvdyB0aGUgdGltZSBmb3IgdGhpcyBpdGVtDQpp
+        cyBtYXJrZWQgb24geW91ciBjYWxlbmRhci4L
+</value>
+  </data>
+  <data name="barEditShowTimeAs.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="barEditLabelAs.Caption" xml:space="preserve">
+    <value>Label As:</value>
+  </data>
+  <data name="repItemAppointmentLabel.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="repItemAppointmentLabel.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="barEditLabelAs.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAFTGFiZWwFCAAAABxEZXZFeHByZXNzLlV0aWxzLlRv
+        b2xUaXBJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VBbGlnbgpJbWFnZUluZGV4
+        E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25lckFsbG93SHRtbFRleHQE
+        VGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVhbgMAAAATU3lzdGVtLkRy
+        YXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4cHJlc3MuVXRpbHMuVG9v
+        bFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAHz/////P///wIAAAAKCgHy////9f///wAAAAD/
+        ////DgAAAAYAAAA8AQAAAAYPAAAAD0xhYmVsIHRoaXMgaXRlbQs=
+</value>
+  </data>
+  <data name="barEditLabelAs.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="btnRecurrence.Caption" xml:space="preserve">
+    <value>Rec&amp;urrence</value>
+  </data>
+  <data name="btnRecurrence.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="btnRecurrence.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAATUmVjdXJyZW5jZSAoQ3RybCtHKQUIAAAAHERldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFs
+        aWduCkltYWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVy
+        QWxsb3dIdG1sVGV4dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFu
+        AwAAABNTeXN0ZW0uRHJhd2luZy5JY29uCQAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQkAAAAmRGV2RXhw
+        cmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfP////8////AgAAAAoK
+        AfL////1////AAAAAP////8OAAAABgAAADwBAAAABg8AAAB5TWFrZSB0aGlzIGl0ZW0gcmVjdXJyaW5n
+        LCBvciBlZGl0IHRoZSByZWN1cnJlbmNlIHBhdHRlcm4uDQoNCkEgcmVjdXJyaW5nIGl0ZW0gaXMgb25l
+        IHdoaWNoIHJlcGVhdHMgb24gYSByZWd1bGFyIHNjaGVkdWxlLgs=
+</value>
+  </data>
+  <data name="pgrOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="btnSpelling.Caption" xml:space="preserve">
+    <value>S&amp;pelling</value>
+  </data>
+  <data name="btnSpelling.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        QmCC
+</value>
+  </data>
+  <data name="btnSpelling.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBwAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wCWl0ZW1UeXBlMQVpdGVtMQQAAAQEBAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAABCCVEZXZFeHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAACFEZXZFeHByZXNz
+        LlV0aWxzLlRvb2xUaXBUaXRsZUl0ZW0CAAAAJURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29sVGlwSXRl
+        bVR5cGUCAAAAHERldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0CAAAAAgAAAAX8////H0RldkV4cHJl
+        c3MuVXRpbHMuRGVmYXVsdEJvb2xlYW4BAAAAB3ZhbHVlX18ACAMAAAACAAAAAAIAAAAF+////yVEZXZF
+        eHByZXNzLlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAQAAAAd2YWx1ZV9fAAgCAAAAAQAAAAkGAAAA
+        Afn////7////AAAAAAkIAAAADAkAAABRU3lzdGVtLkRyYXdpbmcsIFZlcnNpb249NC4wLjAuMCwgQ3Vs
+        dHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iMDNmNWY3ZjExZDUwYTNhBQYAAAAhRGV2RXhwcmVz
+        cy5VdGlscy5Ub29sVGlwVGl0bGVJdGVtCgAAAA1BbGxvd0h0bWxUZXh0BEljb24FSW1hZ2UKSW1hZ2VB
+        bGlnbgpJbWFnZUluZGV4E0ltYWdlVG9UZXh0RGlzdGFuY2UKTGVmdEluZGVudAhNYXhXaWR0aBJPd25l
+        ckFsbG93SHRtbFRleHQEVGV4dAQEBAQAAAAAAAEfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVh
+        bgMAAAATU3lzdGVtLkRyYXdpbmcuSWNvbgkAAAAUU3lzdGVtLkRyYXdpbmcuSW1hZ2UJAAAAJkRldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AgAAAAgICAgBAgAAAAH2/////P///wIAAAAK
+        CgX1////JkRldkV4cHJlc3MuVXRpbHMuVG9vbFRpcEltYWdlQWxpZ25tZW50AQAAAAd2YWx1ZV9fAAgC
+        AAAAAAAAAP////8OAAAAAAAAADwBAAAABgwAAAAYU3BlbGxpbmcgJiYgR3JhbW1hciAoRjcpBQgAAAAc
+        RGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSXRlbQoAAAANQWxsb3dIdG1sVGV4dARJY29uBUltYWdlCklt
+        YWdlQWxpZ24KSW1hZ2VJbmRleBNJbWFnZVRvVGV4dERpc3RhbmNlCkxlZnRJbmRlbnQITWF4V2lkdGgS
+        T3duZXJBbGxvd0h0bWxUZXh0BFRleHQEBAQEAAAAAAABH0RldkV4cHJlc3MuVXRpbHMuRGVmYXVsdEJv
+        b2xlYW4DAAAAE1N5c3RlbS5EcmF3aW5nLkljb24JAAAAFFN5c3RlbS5EcmF3aW5nLkltYWdlCQAAACZE
+        ZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJbWFnZUFsaWdubWVudAIAAAAICAgIAQIAAAAB8/////z///8C
+        AAAACgoB8v////X///8AAAAA/////w4AAAAGAAAAPAEAAAAGDwAAADdDaGVjayB0aGUgc3BlbGxpbmcg
+        YW5kIGdyYW1tYXIgb2YgdGV4dCBpbiB0aGUgZG9jdW1lbnQuCw==
+</value>
+  </data>
+  <data name="pgrProofing.Text" xml:space="preserve">
+    <value>Proofing</value>
+  </data>
+  <data name="ribPageAppointment.Text" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="btnClose.Caption" xml:space="preserve">
+    <value>&amp;Close</value>
+  </data>
+  <data name="btnClose.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBQAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wBAAABAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVhbgMAAAABCCVEZXZFeHByZXNz
+        LlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVt
+        AgAAAAIAAAAF/P///x9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuAQAAAAd2YWx1ZV9fAAgD
+        AAAAAgAAAAABAAAABfv///8lRGV2RXhwcmVzcy5VdGlscy5TdXBlclRvb2xUaXBJdGVtVHlwZQEAAAAH
+        dmFsdWVfXwAIAgAAAAAAAAAJBgAAAAwHAAAAUVN5c3RlbS5EcmF3aW5nLCBWZXJzaW9uPTQuMC4wLjAs
+        IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUGAAAAHERldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFs
+        aWduCkltYWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVy
+        QWxsb3dIdG1sVGV4dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFu
+        AwAAABNTeXN0ZW0uRHJhd2luZy5JY29uBwAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQcAAAAmRGV2RXhw
+        cmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfj////8////AgAAAAoK
+        Bff///8mRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIA
+        AAAAAAAA/////w4AAAAAAAAAPAEAAAAGCgAAAA5DbG9zZSAoQWx0K0Y0KQs=
+</value>
+  </data>
+  <data name="btnSave.Caption" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="btnSave.SuperTip" type="DevExpress.Utils.SuperToolTip, DevExpress.Utils.v14.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxNC4xLCBWZXJzaW9uPTE0LjEu
+        OC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFlE
+        ZXZFeHByZXNzLkRhdGEudjE0LjEsIFZlcnNpb249MTQuMS44LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+        bGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURldkV4cHJlc3MuVXRpbHMuU3VwZXJUb29s
+        VGlwBQAAAA1BbGxvd0h0bWxUZXh0EUZpeGVkVG9vbFRpcFdpZHRoCkl0ZW1zQ291bnQJaXRlbVR5cGUw
+        BWl0ZW0wBAAABAQfRGV2RXhwcmVzcy5VdGlscy5EZWZhdWx0Qm9vbGVhbgMAAAABCCVEZXZFeHByZXNz
+        LlV0aWxzLlN1cGVyVG9vbFRpcEl0ZW1UeXBlAgAAABxEZXZFeHByZXNzLlV0aWxzLlRvb2xUaXBJdGVt
+        AgAAAAIAAAAF/P///x9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFuAQAAAAd2YWx1ZV9fAAgD
+        AAAAAgAAAAABAAAABfv///8lRGV2RXhwcmVzcy5VdGlscy5TdXBlclRvb2xUaXBJdGVtVHlwZQEAAAAH
+        dmFsdWVfXwAIAgAAAAAAAAAJBgAAAAwHAAAAUVN5c3RlbS5EcmF3aW5nLCBWZXJzaW9uPTQuMC4wLjAs
+        IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2YxMWQ1MGEzYQUGAAAAHERldkV4
+        cHJlc3MuVXRpbHMuVG9vbFRpcEl0ZW0KAAAADUFsbG93SHRtbFRleHQESWNvbgVJbWFnZQpJbWFnZUFs
+        aWduCkltYWdlSW5kZXgTSW1hZ2VUb1RleHREaXN0YW5jZQpMZWZ0SW5kZW50CE1heFdpZHRoEk93bmVy
+        QWxsb3dIdG1sVGV4dARUZXh0BAQEBAAAAAAAAR9EZXZFeHByZXNzLlV0aWxzLkRlZmF1bHRCb29sZWFu
+        AwAAABNTeXN0ZW0uRHJhd2luZy5JY29uBwAAABRTeXN0ZW0uRHJhd2luZy5JbWFnZQcAAAAmRGV2RXhw
+        cmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQCAAAACAgICAECAAAAAfj////8////AgAAAAoK
+        Bff///8mRGV2RXhwcmVzcy5VdGlscy5Ub29sVGlwSW1hZ2VBbGlnbm1lbnQBAAAAB3ZhbHVlX18ACAIA
+        AAAAAAAA/////w4AAAAAAAAAPAEAAAAGCgAAAA1TYXZlIChDdHJsK1MpCw==
+</value>
+  </data>
+  <data name="ribbonControl.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="applicationMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>131, 17</value>
+  </metadata>
+  <metadata name="barAndDockingController.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>263, 17</value>
+  </metadata>
+  <data name="ribbonControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbonControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 144</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl.Name" xml:space="preserve">
+    <value>ribbonControl</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonControl, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbonControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="spellChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>609, 536</value>
+  </data>
+  <data name="edtResources.EditValue" xml:space="preserve">
+    <value>(None)</value>
+  </data>
+  <data name="edtResources.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 82</value>
+  </data>
+  <data name="edtResources.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="edtResources.ResourcesCheckedListBoxControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="edtResources.ResourcesCheckedListBoxControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="edtResources.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 20</value>
+  </data>
+  <data name="edtResources.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;edtResources.Name" xml:space="preserve">
+    <value>edtResources</value>
+  </data>
+  <data name="&gt;&gt;edtResources.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.AppointmentResourcesEdit, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtResources.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtResources.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tbLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 41</value>
+  </data>
+  <data name="tbLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 20</value>
+  </data>
+  <data name="tbLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.Name" xml:space="preserve">
+    <value>tbLocation</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbLocation.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblHorzSeparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 65</value>
+  </data>
+  <data name="lblHorzSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 13</value>
+  </data>
+  <data name="lblHorzSeparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.Name" xml:space="preserve">
+    <value>lblHorzSeparator1</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblInfo.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <assembly alias="DevExpress.XtraEditors.v14.1" name="DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="lblInfo.AutoSizeMode" type="DevExpress.XtraEditors.LabelAutoSizeMode, DevExpress.XtraEditors.v14.1">
+    <value>Vertical</value>
+  </data>
+  <data name="lblInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="lblInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 1</value>
+  </data>
+  <data name="lblInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Name" xml:space="preserve">
+    <value>lblInfo</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblInfo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblHorzSeparator2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 154</value>
+  </data>
+  <data name="lblHorzSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 13</value>
+  </data>
+  <data name="lblHorzSeparator2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.Name" xml:space="preserve">
+    <value>lblHorzSeparator2</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.LabelControl, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;lblHorzSeparator2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="tbSubject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="tbSubject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 20</value>
+  </data>
+  <data name="tbSubject.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.Name" xml:space="preserve">
+    <value>tbSubject</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbSubject.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="edtStartDate.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtStartDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 82</value>
+  </data>
+  <data name="edtStartDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="edtStartDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 20</value>
+  </data>
+  <data name="edtStartDate.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.Name" xml:space="preserve">
+    <value>edtStartDate</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtStartDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="cbReminder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 171</value>
+  </data>
+  <data name="cbReminder.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="cbReminder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>501, 20</value>
+  </data>
+  <data name="cbReminder.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.Name" xml:space="preserve">
+    <value>cbReminder</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.DurationEdit, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;cbReminder.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="edtResource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 106</value>
+  </data>
+  <data name="edtResource.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="edtResource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 20</value>
+  </data>
+  <data name="edtResource.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;edtResource.Name" xml:space="preserve">
+    <value>edtResource</value>
+  </data>
+  <data name="&gt;&gt;edtResource.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.AppointmentResourceEdit, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtResource.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtResource.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="edtEndDate.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 130</value>
+  </data>
+  <data name="edtEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v14.1">
+    <value>Combo</value>
+  </data>
+  <data name="edtEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 20</value>
+  </data>
+  <data name="edtEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.Name" xml:space="preserve">
+    <value>edtEndDate</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtEndDate.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="tbDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 195</value>
+  </data>
+  <data name="tbDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 185</value>
+  </data>
+  <data name="tbDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.Name" xml:space="preserve">
+    <value>tbDescription</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.MemoEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;tbDescription.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="edtStartTime.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtStartTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 82</value>
+  </data>
+  <data name="edtStartTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="edtStartTime.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.Name" xml:space="preserve">
+    <value>edtStartTime</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SchedulerTimeEdit, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtStartTime.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="edtEndTime.EditValue" type="System.DateTime, mscorlib">
+    <value>2007-09-12</value>
+  </data>
+  <data name="edtEndTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 130</value>
+  </data>
+  <data name="edtEndTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="edtEndTime.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.Name" xml:space="preserve">
+    <value>edtEndTime</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.SchedulerTimeEdit, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;edtEndTime.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="chkAllDay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>351, 130</value>
+  </data>
+  <data name="chkAllDay.Properties.Caption" xml:space="preserve">
+    <value>All da&amp;y event</value>
+  </data>
+  <data name="chkAllDay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 19</value>
+  </data>
+  <data name="chkAllDay.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.Name" xml:space="preserve">
+    <value>chkAllDay</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;chkAllDay.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="chkReminder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 171</value>
+  </data>
+  <data name="chkReminder.Properties.Caption" xml:space="preserve">
+    <value>&amp;Reminder</value>
+  </data>
+  <data name="chkReminder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="chkReminder.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.Name" xml:space="preserve">
+    <value>chkReminder</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.Parent" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;chkReminder.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="layoutCtrl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="layoutCtrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 144</value>
+  </data>
+  <data name="layoutControlGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="layoutLocation.CustomizationFormText" xml:space="preserve">
+    <value>&amp;Location:</value>
+  </data>
+  <data name="layoutLocation.Text" xml:space="preserve">
+    <value>&amp;Location:</value>
+  </data>
+  <data name="layoutSubject.CustomizationFormText" xml:space="preserve">
+    <value>Sub&amp;ject:</value>
+  </data>
+  <data name="layoutSubject.Text" xml:space="preserve">
+    <value>Sub&amp;ject:</value>
+  </data>
+  <data name="layoutDescription.CustomizationFormText" xml:space="preserve">
+    <value>layoutDescription</value>
+  </data>
+  <data name="layoutDescription.Text" xml:space="preserve">
+    <value>layoutDescription</value>
+  </data>
+  <data name="layoutAllDay.CustomizationFormText" xml:space="preserve">
+    <value>layoutAllDay</value>
+  </data>
+  <data name="layoutAllDay.Text" xml:space="preserve">
+    <value>layoutAllDay</value>
+  </data>
+  <data name="layoutInfo.CustomizationFormText" xml:space="preserve">
+    <value>layoutInfo</value>
+  </data>
+  <data name="layoutInfo.Text" xml:space="preserve">
+    <value>layoutInfo</value>
+  </data>
+  <data name="layoutReminderGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutReminderGroup</value>
+  </data>
+  <data name="layoutChkReminder.CustomizationFormText" xml:space="preserve">
+    <value>layoutChkReminder</value>
+  </data>
+  <data name="layoutChkReminder.Text" xml:space="preserve">
+    <value>layoutChkReminder</value>
+  </data>
+  <data name="layoutReminder.CustomizationFormText" xml:space="preserve">
+    <value>layoutReminder</value>
+  </data>
+  <data name="layoutReminder.Text" xml:space="preserve">
+    <value>layoutReminder</value>
+  </data>
+  <data name="layoutReminderGroup.Text" xml:space="preserve">
+    <value>layoutReminderGroup</value>
+  </data>
+  <data name="layoutStartGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutStartGroup</value>
+  </data>
+  <data name="layoutStartDate.CustomizationFormText" xml:space="preserve">
+    <value>S&amp;tart time:</value>
+  </data>
+  <data name="layoutStartDate.Text" xml:space="preserve">
+    <value>S&amp;tart time:</value>
+  </data>
+  <data name="layoutStartTime.CustomizationFormText" xml:space="preserve">
+    <value>layoutStartTime</value>
+  </data>
+  <data name="layoutStartTime.Text" xml:space="preserve">
+    <value>layoutStartTime</value>
+  </data>
+  <data name="layoutStartGroup.Text" xml:space="preserve">
+    <value>layoutStartGroup</value>
+  </data>
+  <data name="layoutEndGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="layoutEndDate.CustomizationFormText" xml:space="preserve">
+    <value>&amp;End time:</value>
+  </data>
+  <data name="layoutEndDate.Text" xml:space="preserve">
+    <value>&amp;End time:</value>
+  </data>
+  <data name="layoutEndTime.CustomizationFormText" xml:space="preserve">
+    <value>layoutEndTime</value>
+  </data>
+  <data name="layoutEndTime.Text" xml:space="preserve">
+    <value>layoutEndTime</value>
+  </data>
+  <data name="layoutEndGroup.Text" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="layoutResourcesGroup.CustomizationFormText" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="layoutResources.CustomizationFormText" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResources.Text" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResource.CustomizationFormText" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResource.Text" xml:space="preserve">
+    <value>Res&amp;ource:</value>
+  </data>
+  <data name="layoutResourcesGroup.Text" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="layoutHorzSeparator1.CustomizationFormText" xml:space="preserve">
+    <value>layoutHorzSeparator1</value>
+  </data>
+  <data name="layoutHorzSeparator1.Text" xml:space="preserve">
+    <value>layoutHorzSeparator1</value>
+  </data>
+  <data name="layoutHorzSeparator2.CustomizationFormText" xml:space="preserve">
+    <value>layoutHorzSeparator2</value>
+  </data>
+  <data name="layoutHorzSeparator2.Text" xml:space="preserve">
+    <value>layoutHorzSeparator2</value>
+  </data>
+  <data name="emptySpaceItem1.CustomizationFormText" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="emptySpaceItem1.Text" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="layoutControlGroup.Text" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="layoutCtrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>609, 392</value>
+  </data>
+  <data name="layoutCtrl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.Name" xml:space="preserve">
+    <value>layoutCtrl</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;layoutCtrl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>560, 500</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;ribPageAppointment.Name" xml:space="preserve">
+    <value>ribPageAppointment</value>
+  </data>
+  <data name="&gt;&gt;ribPageAppointment.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pgrActions.Name" xml:space="preserve">
+    <value>pgrActions</value>
+  </data>
+  <data name="&gt;&gt;pgrActions.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSaveAndClose.Name" xml:space="preserve">
+    <value>btnSaveAndClose</value>
+  </data>
+  <data name="&gt;&gt;btnSaveAndClose.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Name" xml:space="preserve">
+    <value>btnDelete</value>
+  </data>
+  <data name="&gt;&gt;btnDelete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pgrOptions.Name" xml:space="preserve">
+    <value>pgrOptions</value>
+  </data>
+  <data name="&gt;&gt;pgrOptions.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barEditShowTimeAs.Name" xml:space="preserve">
+    <value>barEditShowTimeAs</value>
+  </data>
+  <data name="&gt;&gt;barEditShowTimeAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repItemAppointmentStatus.Name" xml:space="preserve">
+    <value>repItemAppointmentStatus</value>
+  </data>
+  <data name="&gt;&gt;repItemAppointmentStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.RepositoryItemAppointmentStatus, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barEditLabelAs.Name" xml:space="preserve">
+    <value>barEditLabelAs</value>
+  </data>
+  <data name="&gt;&gt;barEditLabelAs.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarEditItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repItemAppointmentLabel.Name" xml:space="preserve">
+    <value>repItemAppointmentLabel</value>
+  </data>
+  <data name="&gt;&gt;repItemAppointmentLabel.Type" xml:space="preserve">
+    <value>DevExpress.XtraScheduler.UI.RepositoryItemAppointmentLabel, DevExpress.XtraScheduler.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnRecurrence.Name" xml:space="preserve">
+    <value>btnRecurrence</value>
+  </data>
+  <data name="&gt;&gt;btnRecurrence.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;pgrProofing.Name" xml:space="preserve">
+    <value>pgrProofing</value>
+  </data>
+  <data name="&gt;&gt;pgrProofing.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSpelling.Name" xml:space="preserve">
+    <value>btnSpelling</value>
+  </data>
+  <data name="&gt;&gt;btnSpelling.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Name" xml:space="preserve">
+    <value>btnSave</value>
+  </data>
+  <data name="&gt;&gt;btnSave.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
+    <value>applicationMenu</value>
+  </data>
+  <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barAndDockingController.Name" xml:space="preserve">
+    <value>barAndDockingController</value>
+  </data>
+  <data name="&gt;&gt;barAndDockingController.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarAndDockingController, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;spellChecker.Name" xml:space="preserve">
+    <value>spellChecker</value>
+  </data>
+  <data name="&gt;&gt;spellChecker.Type" xml:space="preserve">
+    <value>DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Name" xml:space="preserve">
+    <value>layoutControlGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutLocation.Name" xml:space="preserve">
+    <value>layoutLocation</value>
+  </data>
+  <data name="&gt;&gt;layoutLocation.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutSubject.Name" xml:space="preserve">
+    <value>layoutSubject</value>
+  </data>
+  <data name="&gt;&gt;layoutSubject.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutDescription.Name" xml:space="preserve">
+    <value>layoutDescription</value>
+  </data>
+  <data name="&gt;&gt;layoutDescription.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutAllDay.Name" xml:space="preserve">
+    <value>layoutAllDay</value>
+  </data>
+  <data name="&gt;&gt;layoutAllDay.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutInfo.Name" xml:space="preserve">
+    <value>layoutInfo</value>
+  </data>
+  <data name="&gt;&gt;layoutInfo.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutReminderGroup.Name" xml:space="preserve">
+    <value>layoutReminderGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutReminderGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutChkReminder.Name" xml:space="preserve">
+    <value>layoutChkReminder</value>
+  </data>
+  <data name="&gt;&gt;layoutChkReminder.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutReminder.Name" xml:space="preserve">
+    <value>layoutReminder</value>
+  </data>
+  <data name="&gt;&gt;layoutReminder.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutStartGroup.Name" xml:space="preserve">
+    <value>layoutStartGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutStartGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutStartDate.Name" xml:space="preserve">
+    <value>layoutStartDate</value>
+  </data>
+  <data name="&gt;&gt;layoutStartDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutStartTime.Name" xml:space="preserve">
+    <value>layoutStartTime</value>
+  </data>
+  <data name="&gt;&gt;layoutStartTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutEndGroup.Name" xml:space="preserve">
+    <value>layoutEndGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutEndGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutEndDate.Name" xml:space="preserve">
+    <value>layoutEndDate</value>
+  </data>
+  <data name="&gt;&gt;layoutEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutEndTime.Name" xml:space="preserve">
+    <value>layoutEndTime</value>
+  </data>
+  <data name="&gt;&gt;layoutEndTime.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutResourcesGroup.Name" xml:space="preserve">
+    <value>layoutResourcesGroup</value>
+  </data>
+  <data name="&gt;&gt;layoutResourcesGroup.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutResources.Name" xml:space="preserve">
+    <value>layoutResources</value>
+  </data>
+  <data name="&gt;&gt;layoutResources.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutResource.Name" xml:space="preserve">
+    <value>layoutResource</value>
+  </data>
+  <data name="&gt;&gt;layoutResource.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator1.Name" xml:space="preserve">
+    <value>layoutHorzSeparator1</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator2.Name" xml:space="preserve">
+    <value>layoutHorzSeparator2</value>
+  </data>
+  <data name="&gt;&gt;layoutHorzSeparator2.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AppointmentFormOutlook2007Style</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>
