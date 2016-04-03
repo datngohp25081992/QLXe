@@ -157,10 +157,8 @@ Partial Class CustomAppointmentForm2
         '
         'tbDescription
         '
-        Me.tbDescription.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-                    Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.tbDescription.Location = New System.Drawing.Point(16, 216)
-        Me.tbDescription.Size = New System.Drawing.Size(552, 165)
+        Me.tbDescription.Location = New System.Drawing.Point(16, 244)
+        Me.tbDescription.Size = New System.Drawing.Size(552, 137)
         '
         'cbReminder
         '
@@ -176,7 +174,7 @@ Partial Class CustomAppointmentForm2
         '
         'progressPanel
         '
-        Me.progressPanel.Location = New System.Drawing.Point(575, 197)
+        Me.progressPanel.Location = New System.Drawing.Point(582, 197)
         Me.progressPanel.Size = New System.Drawing.Size(552, 30)
         '
         'tbProgress
@@ -188,7 +186,7 @@ Partial Class CustomAppointmentForm2
         'lblPercentComplete
         '
         Me.lblPercentComplete.Appearance.BackColor = System.Drawing.Color.Transparent
-        Me.lblPercentComplete.Location = New System.Drawing.Point(3, 10)
+        Me.lblPercentComplete.Location = New System.Drawing.Point(37, 10)
         Me.lblPercentComplete.Visible = False
         '
         'lblPercentCompleteValue

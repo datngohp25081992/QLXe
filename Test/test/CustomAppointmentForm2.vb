@@ -41,11 +41,11 @@ Partial Public Class CustomAppointmentForm2
     ''' </summary>
     Public Overrides Sub LoadFormData(ByVal appointment As DevExpress.XtraScheduler.Appointment)
         MyBase.LoadFormData(appointment)
-        'If appointment.CustomFields("MaNV") Is Nothing Then
-        '    lkuNhanVien.EditValue = ""
-        'Else
-        '    lkuNhanVien.EditValue = appointment.CustomFields("MaNV").ToString()
-        'End If
+        If appointment.CustomFields("MaNV") Is Nothing Then
+            lkuNhanVien.EditValue = ""
+        Else
+            lkuNhanVien.EditValue = appointment.CustomFields("MaNV").ToString()
+        End If
 
     End Sub
     ''' <summary>
